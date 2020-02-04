@@ -3,7 +3,8 @@ function createGameBoard() {
  let i = 0;
  while (i < 30) {
     let tile = document.createElement('div');
-    document.body.appendChild(tile);
+    document.querySelector('#Gameboard').appendChild(tile);
+    document.querySelector('#Gameboard').lastChild.textContent = 'hello world';
     i++;
  }
 }
