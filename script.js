@@ -1,6 +1,9 @@
 function createGameBoard() {
  let tile = document.createElement('div');
- for (let i = 0; i < 30; i++) {
+ let i = 0;
+ while (i < 30) {
+    let tile = document.createElement('div');
     document.body.appendChild(tile);
+    i++;
  }
 }
