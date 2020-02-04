@@ -1,0 +1,18 @@
+body {
+    grid-template-areas: 
+    'head'
+    'body'
+    'footer';
+}
+
+.head {
+    grid-area: 'head';
+}
+div {
+    background: red;
+}
+
+#Gameboard {
+    background: blue;
+}
+
