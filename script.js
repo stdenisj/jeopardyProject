@@ -193,12 +193,14 @@ let gameLogic = {
 }
 
 let divsArr = [];
+let board = document.querySelector('#Gameboard');
+let tile = document.createElement('div');
 
 // This function creates a variable to create 'div' elements and a variable to locate the '#GameBoard'      element. Then it runs the populateGameBoard function. Lastly it finds the classes of the newly           created elements and stores the elements in an array.
 
 function createGameBoard() {
- let tile = document.createElement('div');
- let board = document.querySelector('#Gameboard');
+//  let tile = document.createElement('div');
+//  let board = document.querySelector('#Gameboard');
  populateGameBoard(tile, board);
  divsArr = document.querySelectorAll('div.onehundred, div.twohundred, div.threehundred,                                                       div.fourhundred, div.fivehundred')
 }
@@ -211,14 +213,14 @@ function activateDivs() {
             console.log(event);
         });
     });
-};
+}
 
 // This function creates 30 div boxes. Then it goes through each row adding the 'catagory' class,           'value' class, and the textcontent.
 function populateGameBoard(tile, board) {
  let CarArr = Object.keys(gameLogic);
  let t = 0
     while (t < 30) {
-    let tile = document.createElement('div');
+        tile = document.createElement('div');
        board.appendChild(tile);
     if (t < 5) {
         board.lastChild.classList.add('catagory' + t);    
@@ -246,3 +248,10 @@ function populateGameBoard(tile, board) {
     t++
 }
 };
+
+function createModal() {
+    board.appendChild(tile);
+    let modal = board.lastChild;
+    modal.classList.add('modal-fade')
+    
+}
