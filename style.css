@@ -24,7 +24,12 @@ section {
     grid-area: body;
     display: grid;
     grid-template-areas: 
-        ' . game . ';
+        ' . game . '
+        ' . controls .';
+}
+
+button {
+    grid-area: controls;
 }
 
 #Gameboard {
