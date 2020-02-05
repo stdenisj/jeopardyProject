@@ -24,6 +24,7 @@ body {
     width: auto;
     margin: auto;
     background: #060CE9;
+    background-image: url(images/tilebackground.png);
     font-family: Helvetica;
     font-weight: 900;
     font-size: 40px;
@@ -39,21 +40,25 @@ body {
 .catagory {
     /* grid-area: fivehundred; */
     background: #060CE9;
+    background-image: url(images/tilebackground.png);
     width: auto;
     height: auto;
     border: 2px solid black;
     padding: 10px 10px;
     text-align: center;
+    text-shadow: 5px 2px 10px black;
     overflow-wrap: break-word;  
 }
 .onehundred {
     /* grid-area: onehundred; */
     background: #060CE9;
+    background-image: url(images/tilebackground.png);
     border: 2px solid black;
     width: auto;
     height: auto;
     padding: 10px 10px;
     text-align: center;
+    text-shadow: 5px 2px 10px black;
     overflow-wrap: break-word;  
 
 }
@@ -61,11 +66,13 @@ body {
 .twohundred {
     /* grid-area: twohundred; */
     background: #060CE9;
+    background-image: url(images/tilebackground.png);
     border: 2px solid black;
     width: auto;
     height: auto;
     padding: 10px 10px;
     text-align: center;
+    text-shadow: 5px 2px 10px black;
     overflow-wrap: break-word;
 }
 
@@ -73,32 +80,38 @@ body {
     /* grid-area: threehundred; */
     background: #060CE9;
     border: 2px solid black;
+    background-image: url(images/tilebackground.png);
     width: auto;
     height: auto;
     padding: 10px 10px;
     text-align: center;
+    text-shadow: 5px 2px 10px black;
     overflow-wrap: break-word;
 }
 
 .fourhundred {
     /* grid-area: fourhundred; */
     background: #060CE9;
+    background-image: url(images/tilebackground.png);
     border: 2px solid black;
     width: auto;
     height: auto;
     padding: 10px 10px;
     text-align: center;
+    text-shadow: 5px 2px 10px black;
     overflow-wrap: break-word;  
 }
 
 .fivehundred {
     /* grid-area: fivehundred; */
     background: #060CE9;
+    background-image: url(images/tilebackground.png);
     border: 2px solid black;
     width: auto;
     height: auto;
     padding: 10px 10px;
     text-align: center;
+    text-shadow: 5px 2px 10px black;
     overflow-wrap: break-word;  
 }
 
