@@ -20,6 +20,13 @@ body {
     overflow-wrap: break-word;   
 } */
 
+section {
+    grid-area: body;
+    display: grid;
+    grid-template-areas: 
+        ' . game . ';
+}
+
 #Gameboard {
     width: auto;
     margin: auto;
@@ -30,10 +37,10 @@ body {
     font-size: 40px;
     color: #d4af37;
     text-align: justify;
-    grid-area: body;
+    grid-area: game;
     display: grid;
     grid-template-columns: 200px 200px 200px 200px 200px;
-    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
 }
 
 
