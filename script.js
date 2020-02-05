@@ -1,277 +1,248 @@
 
 let gameLogic = {
     catagory1:  {   
-                    name: '',
-                    one: {
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:   '',
-                    },
-                    two: {                            
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:  '',
-                    },
-                    three: {       
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:  '',
-                    },
-                    four: {    
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:  '',
-                    },                            
-                    five: {                            
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:  '',
-                    },
+       name: 'Engines',
+        one: {
+                question:       'question1',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:   'correctAnswer',
+        },
+        two: {                            
+                question:       'question2',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:  'correctAnswer',
+        },
+        three: {       
+                question:       'question3',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:  'correctAnswer',
+        },
+        four: {    
+                question:       'question4',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:  'correctAnswer',
+        },                            
+        five: {                            
+                question:       'question5',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:  'correctAnswer',
+        },
     },
-    catagory2: {
-                    name: '',
-                    one: {
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:   '',
-                    },
-                    two: {                            
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:  '',
-                    },
-                    three: {       
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:  '',
-                    },
-                    four: {    
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:  '', 
-                    },                           
-                    five: {                            
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:  '',
-                    },
+    catagory2: {   
+        name: 'Manufacturer',
+        one: {
+                question:       'question1',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:   'correctAnswer',
+        },
+        two: {                            
+                question:       'question2',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:  'correctAnswer',
+        },
+        three: {       
+                question:       'question3',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:  'correctAnswer',
+        },
+        four: {    
+                question:       'question4',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:  'correctAnswer',
+        },                            
+        five: {                            
+                question:       'question5',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:  'correctAnswer',
+        },
     },
-    catagory3: {
-                    name: '',
-                    one: {
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:   '',
-                    },
-                    two: {                            
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:  '',
-                    },
-                    three: {       
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:  '',
-                    },
-                    four: {    
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:  '',
-                    },                            
-                    five: {                            
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:  '',
-                    },
+    catagory3: {   
+        name: 'Models',
+        one: {
+                question:       'question1',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:   'correctAnswer',
+        },
+        two: {                            
+                question:       'question2',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:  'correctAnswer',
+        },
+        three: {       
+                question:       'question3',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:  'correctAnswer',
+        },
+        four: {    
+                question:       'question4',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:  'correctAnswer',
+        },                            
+        five: {                            
+                question:       'question5',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:  'correctAnswer',
+        },
     },
-    catagory4: {
-                    name: '',
-                    one: {
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:   '',
-                    },
-                    two: {                            
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:  '',
-                    },
-                    three: {       
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:  '',
-                    },
-                    four: {    
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:  '',
-                    },                          
-                    five: {                            
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:  '',
-                    },
+    catagory4: {   
+        name: 'Racing',
+        one: {
+                question:       'question1',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:   'correctAnswer',
+        },
+        two: {                            
+                question:       'question2',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:  'correctAnswer',
+        },
+        three: {       
+                question:       'question3',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:  'correctAnswer',
+        },
+        four: {    
+                question:       'question4',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:  'correctAnswer',
+        },                            
+        five: {                            
+                question:       'question5',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:  'correctAnswer',
+        },
     },
-    catagory5: {
-                    name: '',
-                    one: {
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:   '',
-                    },
-                    two: {                            
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:  '',
-                    },
-                    three: {       
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:  '',
-                    },
-                    four: {    
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:  '',
-                    },                            
-                    five: {                            
-                            question:       '',
-                            answerOne:      '',
-                            answerTwo:      '',
-                            answerThree:    '',
-                            correctAnswer:  '',
-                    },
+    catagory5: {   
+        name: 'cat 5',
+        one: {
+                question:       'question1',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:   'correctAnswer',
+        },
+        two: {                            
+                question:       'question2',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:  'correctAnswer',
+        },
+        three: {       
+                question:       'question3',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:  'correctAnswer',
+        },
+        four: {    
+                question:       'question4',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:  'correctAnswer',
+        },                            
+        five: {                            
+                question:       'question5',
+                answerOne:      'answerOne',
+                answerTwo:      'answerTwo',
+                answerThree:    'answerThree',
+                correctAnswer:  'correctAnswer',
+        },
     },
 }
 
 let divsArr = [];
 
+// This function creates a variable to create 'div' elements and a variable to locate the '#GameBoard'      element. Then it runs the populateGameBoard function. Lastly it finds the classes of the newly           created elements and stores the elements in an array.
+
 function createGameBoard() {
  let tile = document.createElement('div');
  let board = document.querySelector('#Gameboard');
-//  addClassAndValue(tile, board);
- let i = 0;
- while (i < 30) {
-    let tile = document.createElement('div');
-    board.appendChild(tile);
-    if (i < 5) {
-        board.lastChild.classList.add('catagory' + i);
-    } else if ((i < 10) && (i > 4)) {
-            board.lastChild.classList.add('onehundred');
-            board.lastChild.textContent = '$100';
-    } else if ((i < 15) && (i > 9)) {
-            board.lastChild.classList.add('twohundred');
-            board.lastChild.textContent = '$200';
-    } else if ((i < 20) && (i > 14)) {
-            board.lastChild.classList.add('threehundred');
-            board.lastChild.textContent = '$300';
-    } else if ((i < 25) && (i > 19)) {
-            board.lastChild.classList.add('fourhundred');
-            board.lastChild.textContent = '$400';
-    } else if((i < 30) && (i > 24)){
-            board.lastChild.classList.add('fivehundred');
-            board.lastChild.textContent = '$500';
-    }
-    i++;
+ populateGameBoard(tile, board);
+ divsArr = document.querySelectorAll('div.onehundred, div.twohundred, div.threehundred,                                                       div.fourhundred, div.fivehundred')
 }
-divsArr = document.querySelectorAll('div.onehundred, div.twohundred, div.threehundred, div.fourhundred, div.fivehundred')
-}
+
+// This function adds an event listener to each of the created boxes on the 'GameBoard'.
 
 function activateDivs() {
     divsArr.forEach(div => {
         div.addEventListener('click', (event) => {
             console.log(event);
-        })
-    })
-}
+        });
+    });
+};
 
-// function addClassAndValue(tile, board) {
-//  let i = 0
-//  while (i < 6) {
-//         if (i === 0) {
-//             for(let j = 0; j < 5; j++) {
-//                 board.appendChild(tile);
-//                 board.lastChild.classList.add('catagory' + j);
-//             }
-//         } else if (i === 1) {
-//             for(let j = 0; j < 5; j++) {
-//                 board.appendChild(tile);
-//                 board.lastChild.classList.add('catagory' + j);
-//                 board.lastChild.textContent = '$100';
-//             }
-//         } else if (i === 2) {
-//             for(let j = 0; j < 5; j++) {
-//                 board.appendChild(tile);
-//                 board.lastChild.classList.add('catagory' + j);
-//                 board.lastChild.textContent = '$200';
-//             }
-//         } else if (i === 3) {
-//             for(let j = 0; j < 5; j++) {
-//                     board.appendChild(tile);
-//                     board.lastChild.classList.add('catagory' + j);
-//                     board.lastChild.textContent = '$300';
-//             }
-//         } else if (i === 4) {
-//             for(let j = 0; j < 5; j++) {
-//                 board.appendChild(tile);
-//                 board.lastChild.classList.add('catagory' + j);
-//                 board.lastChild.textContent = '$400';
-//             }
-//         } else if (i === 5) {
-//             for(let j = 0; j < 5; j++) {
-//                 board.appendChild(tile);
-//                 board.lastChild.classList.add('catagory' + j);
-//                 board.lastChild.textContent = '$500';
-//             }
-//         }
-//         i++
-//     }
-// }
+// This function creates 30 div boxes. Then it goes through each row adding the 'catagory' class,           'value' class, and the textcontent.
+function populateGameBoard(tile, board) {
+ let CarArr = Object.keys(gameLogic);
+ let t = 0
+    while (t < 30) {
+    let tile = document.createElement('div');
+       board.appendChild(tile);
+    if (t < 5) {
+        board.lastChild.classList.add('catagory' + t);    
+    } else if (t < 10) {
+        let z = t - 5;
+        board.lastChild.classList.add('onehundred', `${CarArr[z]}`);
+        board.lastChild.textContent = '$100';    
+    } else if (t < 15){
+        let z = t - 10;
+        board.lastChild.classList.add('twohundred', `${CarArr[z]}`);
+        board.lastChild.textContent = '$200'; 
+    } else if (t < 20) {
+        let z = t - 15;
+        board.lastChild.classList.add('threehundred', `${CarArr[z]}`);
+        board.lastChild.textContent = '$300';
+    } else if (t < 25) {
+        let z = t - 20;
+        board.lastChild.classList.add('fourhundred', `${CarArr[z]}`);
+        board.lastChild.textContent = '$400';
+    } else if (t < 30) {
+        let z = t - 25;
+        board.lastChild.classList.add('fivehundred', `${CarArr[z]}`);
+        board.lastChild.textContent = '$500';  
+    }
+    t++
+}
+};
