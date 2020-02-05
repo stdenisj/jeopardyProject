@@ -5,24 +5,24 @@ function createGameBoard() {
  while (i < 30) {
     let tile = document.createElement('div');
     board.appendChild(tile);
-    board.lastChild.textContent = 'hello world';
     if (i < 5) {
         board.lastChild.classList.add('catagory');
     } else if ((i < 10) && (i > 4)) {
             board.lastChild.classList.add('onehundred');
+            board.lastChild.textContent = '100';
     } else if ((i < 15) && (i > 9)) {
             board.lastChild.classList.add('twohundred');
+            board.lastChild.textContent = '200';
     } else if ((i < 20) && (i > 14)) {
             board.lastChild.classList.add('threehundred');
+            board.lastChild.textContent = '300';
     } else if ((i < 25) && (i > 19)) {
             board.lastChild.classList.add('fourhundred');
+            board.lastChild.textContent = '400';
     } else if((i < 30) && (i > 24)){
             board.lastChild.classList.add('fivehundred');
+            board.lastChild.textContent = '500';
     }
     i++;
  }
 }
-
-
-// create loop through the divs applying the catagory class name. 
-// If index is between a certain number apply a certain class
