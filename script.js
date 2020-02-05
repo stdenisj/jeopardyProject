@@ -192,11 +192,19 @@ let gameLogic = {
     },
 }
 
+const startButton = document.querySelector('#Start')
 let divsArr = [];
 let board = document.querySelector('#Gameboard');
 let tile = document.createElement('div');
 
 // This function creates a variable to create 'div' elements and a variable to locate the '#GameBoard'      element. Then it runs the populateGameBoard function. Lastly it finds the classes of the newly           created elements and stores the elements in an array.
+
+startButton.addEventListener('click', () => {
+    handleClickEvent();
+    createGameBoard();
+    activateDivs();
+}
+)
 
 function createGameBoard() {
 //  let tile = document.createElement('div');
