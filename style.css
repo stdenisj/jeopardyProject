@@ -15,17 +15,37 @@ div {
     
 }
 
+.onehundred {
+    grid-area: onehundred;
+
+}
+
+.twohundred {
+    grid-area: twohundred;
+}
+
+.threehundred {
+    grid-area: threehundred;
+}
+
+.fourhundred {
+    grid-area: fourhundred;
+}
+
+.fivehundred {
+    grid-area: fivehundred;
+}
 #Gameboard {
     background: blue;
     grid-area: body;
     display: grid;
     grid-template-areas: 
-        'div div div div div'
-        'div div div div div'
-        'div div div div div'
-        'div div div div div'
-        'div div div div div'
-        'div div div div div'
+        'catagory catagory catagory catagory catagory'
+        'onehundred onehundred onehundred onehundred onehundred'
+        'twohundred twohundred twohundred twohundred twohundred'
+        'threehundred threehundred threehundred threehundred threehundred'
+        'fourhundred fourhundred fourhundred fourhundred fourhundred'
+        'fivehundred fivehundred fivehundred fivehundred fivehundred'
     ;
 }
 
