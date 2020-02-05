@@ -210,6 +210,7 @@ function createGameBoard() {
 function activateDivs() {
     divsArr.forEach(div => {
         div.addEventListener('click', (event) => {
+            handleClickEvent();
             console.log(event);
         });
     });
@@ -249,9 +250,9 @@ function populateGameBoard(tile, board) {
 }
 };
 
-function createModal() {
-    board.appendChild(tile);
-    let modal = board.lastChild;
-    modal.classList.add('modal-fade')
-    
+
+function handleClickEvent() {
+    event.preventDefault();
 }
+    
+// }
