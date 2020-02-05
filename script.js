@@ -8,3 +8,7 @@ function createGameBoard() {
     i++;
  }
 }
+
+
+// create loop through the divs applying the catagory class name. 
+// If index is between a certain number apply a certain class
