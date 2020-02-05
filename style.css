@@ -1,4 +1,5 @@
 body {
+    background-color: black;
     display: grid;
     grid-template-areas: 
     'head'
@@ -8,6 +9,7 @@ body {
 
 .head {
     grid-area: head;
+    color: #d4af37;
 }
 /* div {
      grid-area: div; 
