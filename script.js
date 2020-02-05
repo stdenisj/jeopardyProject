@@ -201,8 +201,10 @@ let tile = document.createElement('div');
 
 startButton.addEventListener('click', () => {
     handleClickEvent();
+    if(board.lastChild == null) {
     createGameBoard();
     activateDivs();
+} else {}
 }
 )
 
@@ -255,12 +257,14 @@ function populateGameBoard(tile, board) {
         board.lastChild.textContent = '$500';  
     }
     t++
+    }
 }
-};
 
 
 function handleClickEvent() {
     event.preventDefault();
 }
     
-// }
+function reload() {
+    board.refresh;
+}
