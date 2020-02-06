@@ -26,13 +26,18 @@ section {
     grid-area: body;
     display: grid;
     grid-template-areas: 
-        ' . game . '
-        ' . controls .';
+        ' . game game game . '
+        ' . new . restart . ';
 }
 
-button {
-    grid-area: controls;
+#Start {
+    grid-area: new;
 }
+
+#Reset {
+    grid-area: restart;
+}
+
 
 #Gameboard {
     width: auto;
