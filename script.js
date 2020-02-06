@@ -196,7 +196,7 @@ const startButton = document.querySelector('#Start')
 let divsArr = [];
 let board = document.querySelector('#Gameboard');
 let tile = document.createElement('div');
-
+const answerButtons = document.querySelectorAll('.answer');
 // This function creates a variable to create 'div' elements and a variable to locate the '#GameBoard'      element. Then it runs the populateGameBoard function. Lastly it finds the classes of the newly           created elements and stores the elements in an array.
 
 startButton.addEventListener('click', () => {
@@ -221,6 +221,12 @@ function createGameBoard() {
      div.setAttribute('data-target', '#exampleModalCenter')
  })
 }
+
+answerButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        console.log(event);
+    })
+});
 
 // This function adds an event listener to each of the created boxes on the 'GameBoard'.
 
@@ -279,6 +285,7 @@ function handleClickEvent() {
     event.preventDefault();
 }
     
-function reload() {
-    board.refresh;
-}
+// function reload() {
+//     board.refresh;
+// }
+
