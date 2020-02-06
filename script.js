@@ -327,6 +327,10 @@ function handleClickEvent() {
 // }
 
 
+// This function pulls the classes from the 'click' event tied to the gameboard tiles.                      
+// It stores those classes in two variables and passese them into the 'CheckCat' function.
+// and the 'CheckValue' function located within 'CheckCat.
+
 function loadQestionAndAnswers (event) {
     let pointValue = event.target.classList[0];
     let cat = event.target.classList[1]
@@ -335,14 +339,25 @@ function loadQestionAndAnswers (event) {
     checkCat(cat, pointValue);
 }
 
+// This function runs during the 'LoadQuestionAndAnswers' function
+// This function takes the column class stored in the 'loadQuestionAndAnswers' function.
+// It loops throught the 'gameLogic' array and compares the variable to each object name.
+// When it finds a matching name runs the 'checkValue' function using the found object.
+
 function checkCat(cat, pointValue) {
     for (let i = 0; i < gameLogic.length; i++) {
         if (cat === gameLogic[i].name) {
-            console.log(gameLogic[i].name);
+            // console.log(gameLogic[i].name);
             checkValue(pointValue, i);
         }
     }
 }
+
+// This function runs during the 'CheckCat' function
+// It uses the value class variable stored in the 'loadQuestionsAndAnswers' function the values stored
+// in the object taken from the 'checkCat' function. Then it loops through the object comparing the values.
+// When a matching value is found, the function changes the text content of the modal title and labels of 
+// each answer button to the information stored for that column and row.
 
 function checkValue(pointValue, i) {
     for (let j = 0; j < 5; j++)
@@ -352,9 +367,5 @@ function checkValue(pointValue, i) {
             document.querySelectorAll('label')[0].textContent = gameLogic[i].value[j].answerOne;
             document.querySelectorAll('label')[1].textContent = gameLogic[i].value[j].answerTwo;
             document.querySelectorAll('label')[2].textContent = gameLogic[i].value[j].answerThree;
-
-
-
-
         }
 }
