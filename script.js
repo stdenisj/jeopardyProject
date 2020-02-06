@@ -1,6 +1,6 @@
 
-let gameLogic = {
-    catagory1:  {   
+let gameLogic = [
+    Engines = {   
        name: 'Engines',
         one: {
                 question:       'question1',
@@ -38,7 +38,7 @@ let gameLogic = {
                 correctAnswer:  'correctAnswer',
         },
     },
-    catagory2: {   
+    Manufacturer = {   
         name: 'Manufacturer',
         one: {
                 question:       'question1',
@@ -76,7 +76,7 @@ let gameLogic = {
                 correctAnswer:  'correctAnswer',
         },
     },
-    catagory3: {   
+    Models = {   
         name: 'Models',
         one: {
                 question:       'question1',
@@ -114,7 +114,7 @@ let gameLogic = {
                 correctAnswer:  'correctAnswer',
         },
     },
-    catagory4: {   
+    Racing = {   
         name: 'Racing',
         one: {
                 question:       'question1',
@@ -152,7 +152,7 @@ let gameLogic = {
                 correctAnswer:  'correctAnswer',
         },
     },
-    catagory5: {   
+    catagory5 = {   
         name: 'cat 5',
         one: {
                 question:       'question1',
@@ -190,7 +190,7 @@ let gameLogic = {
                 correctAnswer:  'correctAnswer',
         },
     },
-}
+]
 
 const startButton = document.querySelector('#Start')
 let divsArr = [];
@@ -229,37 +229,44 @@ function activateDivs() {
 // This function creates 30 div boxes. Then it goes through each row adding the 'catagory' class,           'value' class, and the textcontent.
 function populateGameBoard(tile, board) {
  let CarArr = Object.keys(gameLogic);
- let t = 0
-    while (t < 30) {
+ let t = 1
+    while (t <= 30) {
         tile = document.createElement('div');
        board.appendChild(tile);
-    if (t < 5) {
-        board.lastChild.classList.add('catagory' + t);    
-    } else if (t < 10) {
+    if (t <= 5) {
+        board.lastChild.classList.add('catagory' + t);
+        board.lastChild.textContent = gameLogic[t-1].name;   
+    } else if (t <= 10) {
         let z = t - 5;
-        board.lastChild.classList.add('onehundred', `${CarArr[z]}`);
+        board.lastChild.classList.add('onehundred', 'catagory' + z);
         board.lastChild.textContent = '$100';    
-    } else if (t < 15){
+    } else if (t <= 15){
         let z = t - 10;
-        board.lastChild.classList.add('twohundred', `${CarArr[z]}`);
+        board.lastChild.classList.add('twohundred', 'catagory' + z);
         board.lastChild.textContent = '$200'; 
-    } else if (t < 20) {
+    } else if (t <= 20) {
         let z = t - 15;
-        board.lastChild.classList.add('threehundred', `${CarArr[z]}`);
+        board.lastChild.classList.add('threehundred', 'catagory' + z);
         board.lastChild.textContent = '$300';
-    } else if (t < 25) {
+    } else if (t <= 25) {
         let z = t - 20;
-        board.lastChild.classList.add('fourhundred', `${CarArr[z]}`);
+        board.lastChild.classList.add('fourhundred', 'catagory' + z);
         board.lastChild.textContent = '$400';
-    } else if (t < 30) {
+    } else if (t <= 30) {
         let z = t - 25;
-        board.lastChild.classList.add('fivehundred', `${CarArr[z]}`);
+        board.lastChild.classList.add('fivehundred', 'catagory' + z);
         board.lastChild.textContent = '$500';  
     }
     t++
     }
 }
 
+function assignCategories() {
+    for (let q = 0; q < 5; q++)
+    if (q === 0) {
+        board.querySelector('catagory1')
+    }
+}
 
 function handleClickEvent() {
     event.preventDefault();
