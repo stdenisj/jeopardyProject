@@ -2,193 +2,223 @@
 let gameLogic = [
     catagory1 = {   
        name: 'Engines',
-        one: {
-                question:       'question1',
+       value: [
+        onehundred = {
+                name:           'onehundred',
+                question:       'cat1question1',
                 answerOne:      'answerOne',
                 answerTwo:      'answerTwo',
                 answerThree:    'answerThree',
                 correctAnswer:   'correctAnswer',
         },
-        two: {                            
-                question:       'question2',
+        twohundred = {
+                name:           'twohundred',                            
+                question:       'cat1question2',
                 answerOne:      'answerOne',
                 answerTwo:      'answerTwo',
                 answerThree:    'answerThree',
                 correctAnswer:  'correctAnswer',
         },
-        three: {       
-                question:       'question3',
+        threehundred = {  
+                name:           'threehundred',     
+                question:       'cat1question3',
                 answerOne:      'answerOne',
                 answerTwo:      'answerTwo',
                 answerThree:    'answerThree',
                 correctAnswer:  'correctAnswer',
         },
-        four: {    
-                question:       'question4',
+        fourhundred = {   
+                name:           'fourhundred', 
+                question:       'cat1question4',
                 answerOne:      'answerOne',
                 answerTwo:      'answerTwo',
                 answerThree:    'answerThree',
                 correctAnswer:  'correctAnswer',
         },                            
-        five: {                            
+        fivehundred = {         
+                name:           'fivehundred',                   
                 question:       'question5',
                 answerOne:      'answerOne',
                 answerTwo:      'answerTwo',
                 answerThree:    'answerThree',
                 correctAnswer:  'correctAnswer',
-        },
+        }],
     },
     catagory2 = {   
         name: 'Manufacturer',
-        one: {
-                question:       'question1',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:   'correctAnswer',
-        },
-        two: {                            
-                question:       'question2',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:  'correctAnswer',
-        },
-        three: {       
-                question:       'question3',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:  'correctAnswer',
-        },
-        four: {    
-                question:       'question4',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:  'correctAnswer',
-        },                            
-        five: {                            
-                question:       'question5',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:  'correctAnswer',
-        },
+        value: [
+            onehundred = {
+                    name:           'onehundred',
+                    question:       'cat1question1',
+                    answerOne:      'answerOne',
+                    answerTwo:      'answerTwo',
+                    answerThree:    'answerThree',
+                    correctAnswer:   'correctAnswer',
+            },
+            twohundred = {
+                    name:           'twohundred',                            
+                    question:       'cat1question2',
+                    answerOne:      'answerOne',
+                    answerTwo:      'answerTwo',
+                    answerThree:    'answerThree',
+                    correctAnswer:  'correctAnswer',
+            },
+            threehundred = {  
+                    name:           'threehundred',     
+                    question:       'cat1question3',
+                    answerOne:      'answerOne',
+                    answerTwo:      'answerTwo',
+                    answerThree:    'answerThree',
+                    correctAnswer:  'correctAnswer',
+            },
+            fourhundred = {   
+                    name:           'fourhundred', 
+                    question:       'cat1question4',
+                    answerOne:      'answerOne',
+                    answerTwo:      'answerTwo',
+                    answerThree:    'answerThree',
+                    correctAnswer:  'correctAnswer',
+            },                            
+            fivehundred = {         
+                    name:           'fivehundred',                   
+                    question:       'question5',
+                    answerOne:      'answerOne',
+                    answerTwo:      'answerTwo',
+                    answerThree:    'answerThree',
+                    correctAnswer:  'correctAnswer',
+            }],
     },
     catagory3 = {   
         name: 'Models',
-        one: {
-                question:       'question1',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:   'correctAnswer',
-        },
-        two: {                            
-                question:       'question2',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:  'correctAnswer',
-        },
-        three: {       
-                question:       'question3',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:  'correctAnswer',
-        },
-        four: {    
-                question:       'question4',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:  'correctAnswer',
-        },                            
-        five: {                            
-                question:       'question5',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:  'correctAnswer',
-        },
+        value: [
+            onehundred = {
+                    name:           'onehundred',
+                    question:       'cat1question1',
+                    answerOne:      'answerOne',
+                    answerTwo:      'answerTwo',
+                    answerThree:    'answerThree',
+                    correctAnswer:   'correctAnswer',
+            },
+            twohundred = {
+                    name:           'twohundred',                            
+                    question:       'cat1question2',
+                    answerOne:      'answerOne',
+                    answerTwo:      'answerTwo',
+                    answerThree:    'answerThree',
+                    correctAnswer:  'correctAnswer',
+            },
+            threehundred = {  
+                    name:           'threehundred',     
+                    question:       'cat1question3',
+                    answerOne:      'answerOne',
+                    answerTwo:      'answerTwo',
+                    answerThree:    'answerThree',
+                    correctAnswer:  'correctAnswer',
+            },
+            fourhundred = {   
+                    name:           'fourhundred', 
+                    question:       'cat1question4',
+                    answerOne:      'answerOne',
+                    answerTwo:      'answerTwo',
+                    answerThree:    'answerThree',
+                    correctAnswer:  'correctAnswer',
+            },                            
+            fivehundred = {         
+                    name:           'fivehundred',                   
+                    question:       'question5',
+                    answerOne:      'answerOne',
+                    answerTwo:      'answerTwo',
+                    answerThree:    'answerThree',
+                    correctAnswer:  'correctAnswer',
+            }],
     },
     catagory4 = {   
         name: 'Racing',
-        one: {
-                question:       'question1',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:   'correctAnswer',
-        },
-        two: {                            
-                question:       'question2',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:  'correctAnswer',
-        },
-        three: {       
-                question:       'question3',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:  'correctAnswer',
-        },
-        four: {    
-                question:       'question4',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:  'correctAnswer',
-        },                            
-        five: {                            
-                question:       'question5',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:  'correctAnswer',
-        },
-    },
+        value: [
+            onehundred = {
+                    name:           'onehundred',
+                    question:       'cat1question1',
+                    answerOne:      'answerOne',
+                    answerTwo:      'answerTwo',
+                    answerThree:    'answerThree',
+                    correctAnswer:   'correctAnswer',
+            },
+            twohundred = {
+                    name:           'twohundred',                            
+                    question:       'cat1question2',
+                    answerOne:      'answerOne',
+                    answerTwo:      'answerTwo',
+                    answerThree:    'answerThree',
+                    correctAnswer:  'correctAnswer',
+            },
+            threehundred = {  
+                    name:           'threehundred',     
+                    question:       'cat1question3',
+                    answerOne:      'answerOne',
+                    answerTwo:      'answerTwo',
+                    answerThree:    'answerThree',
+                    correctAnswer:  'correctAnswer',
+            },
+            fourhundred = {   
+                    name:           'fourhundred', 
+                    question:       'cat1question4',
+                    answerOne:      'answerOne',
+                    answerTwo:      'answerTwo',
+                    answerThree:    'answerThree',
+                    correctAnswer:  'correctAnswer',
+            },                            
+            fivehundred = {         
+                    name:           'fivehundred',                   
+                    question:       'question5',
+                    answerOne:      'answerOne',
+                    answerTwo:      'answerTwo',
+                    answerThree:    'answerThree',
+                    correctAnswer:  'correctAnswer',
+            }],
+    },    
     catagory5 = {   
         name: 'cat5',
-        one: {
-                question:       'question1',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:   'correctAnswer',
-        },
-        two: {                            
-                question:       'question2',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:  'correctAnswer',
-        },
-        three: {       
-                question:       'question3',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:  'correctAnswer',
-        },
-        four: {    
-                question:       'question4',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:  'correctAnswer',
-        },                            
-        five: {                            
-                question:       'question5',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:  'correctAnswer',
-        },
+        value: [
+            onehundred = {
+                    name:           'onehundred',
+                    question:       'cat1question1',
+                    answerOne:      'answerOne',
+                    answerTwo:      'answerTwo',
+                    answerThree:    'answerThree',
+                    correctAnswer:   'correctAnswer',
+            },
+            twohundred = {
+                    name:           'twohundred',                            
+                    question:       'cat1question2',
+                    answerOne:      'answerOne',
+                    answerTwo:      'answerTwo',
+                    answerThree:    'answerThree',
+                    correctAnswer:  'correctAnswer',
+            },
+            threehundred = {  
+                    name:           'threehundred',     
+                    question:       'cat1question3',
+                    answerOne:      'answerOne',
+                    answerTwo:      'answerTwo',
+                    answerThree:    'answerThree',
+                    correctAnswer:  'correctAnswer',
+            },
+            fourhundred = {   
+                    name:           'fourhundred', 
+                    question:       'cat1question4',
+                    answerOne:      'answerOne',
+                    answerTwo:      'answerTwo',
+                    answerThree:    'answerThree',
+                    correctAnswer:  'correctAnswer',
+            },                            
+            fivehundred = {         
+                    name:           'fivehundred',                   
+                    question:       'question5',
+                    answerOne:      'answerOne',
+                    answerTwo:      'answerTwo',
+                    answerThree:    'answerThree',
+                    correctAnswer:  'correctAnswer',
+            }],
     },
 ]
 
@@ -300,14 +330,28 @@ function handleClickEvent() {
 function loadQestionAndAnswers (event) {
     let pointValue = event.target.classList[0];
     let cat = event.target.classList[1]
-    console.log(pointValue)
+    // console.log(pointValue);
     // console.log(cat);
-    gameLogic.forEach(item => {
-        if(item === cat) {
-            console.log(cat);
-        } else {    
-        } 
-    })
-    
+    checkCat(cat, pointValue);
 }
 
+function checkCat(cat, pointValue) {
+    for (let i = 0; i < gameLogic.length; i++) {
+        if (cat === gameLogic[i].name) {
+            console.log(gameLogic[i].name);
+            checkValue(pointValue, i);
+        }
+    }
+}
+
+function checkValue(pointValue, i) {
+    for (let j = 0; j < 5; j++)
+        if (pointValue === gameLogic[i].value[j].name) {
+            console.log(gameLogic[i].value[j].name);
+            
+
+
+
+
+        }
+}
