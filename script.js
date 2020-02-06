@@ -1,6 +1,6 @@
 
 let gameLogic = [
-    Engines = {   
+    catagory1 = {   
        name: 'Engines',
         one: {
                 question:       'question1',
@@ -38,7 +38,7 @@ let gameLogic = [
                 correctAnswer:  'correctAnswer',
         },
     },
-    Manufacturer = {   
+    catagory2 = {   
         name: 'Manufacturer',
         one: {
                 question:       'question1',
@@ -76,7 +76,7 @@ let gameLogic = [
                 correctAnswer:  'correctAnswer',
         },
     },
-    Models = {   
+    catagory3 = {   
         name: 'Models',
         one: {
                 question:       'question1',
@@ -114,7 +114,7 @@ let gameLogic = [
                 correctAnswer:  'correctAnswer',
         },
     },
-    Racing = {   
+    catagory4 = {   
         name: 'Racing',
         one: {
                 question:       'question1',
@@ -153,7 +153,7 @@ let gameLogic = [
         },
     },
     catagory5 = {   
-        name: 'cat 5',
+        name: 'cat5',
         one: {
                 question:       'question1',
                 answerOne:      'answerOne',
@@ -235,6 +235,7 @@ function activateDivs() {
         div.addEventListener('click', (event) => {
             handleClickEvent();
             console.log(event);
+            loadQestionAndAnswers(event);
         });
     });
 }
@@ -247,27 +248,33 @@ function populateGameBoard(tile, board) {
         tile = document.createElement('div');
        board.appendChild(tile);
     if (t <= 5) {
-        board.lastChild.classList.add('catagory' + t);
+        let l =gameLogic[t-1].name
+        board.lastChild.classList.add(l);
         board.lastChild.textContent = gameLogic[t-1].name;   
     } else if (t <= 10) {
-        let z = t - 5;
-        board.lastChild.classList.add('onehundred', 'catagory' + z);
+        let z = t - 6;
+        let y = gameLogic[z].name
+        board.lastChild.classList.add('onehundred', y);
         board.lastChild.textContent = '$100';    
     } else if (t <= 15){
-        let z = t - 10;
-        board.lastChild.classList.add('twohundred', 'catagory' + z);
+        let z = t - 11;
+        let y = gameLogic[z].name
+        board.lastChild.classList.add('twohundred', y);
         board.lastChild.textContent = '$200'; 
     } else if (t <= 20) {
-        let z = t - 15;
-        board.lastChild.classList.add('threehundred', 'catagory' + z);
+        let z = t - 16;
+        let y = gameLogic[z].name
+        board.lastChild.classList.add('threehundred', y);
         board.lastChild.textContent = '$300';
     } else if (t <= 25) {
-        let z = t - 20;
-        board.lastChild.classList.add('fourhundred', 'catagory' + z);
+        let z = t - 21;
+        let y = gameLogic[z].name
+        board.lastChild.classList.add('fourhundred', y);
         board.lastChild.textContent = '$400';
     } else if (t <= 30) {
-        let z = t - 25;
-        board.lastChild.classList.add('fivehundred', 'catagory' + z);
+        let z = t - 26;
+        let y = gameLogic[z].name
+        board.lastChild.classList.add('fivehundred', y);
         board.lastChild.textContent = '$500';  
     }
     t++
@@ -288,4 +295,19 @@ function handleClickEvent() {
 // function reload() {
 //     board.refresh;
 // }
+
+
+function loadQestionAndAnswers (event) {
+    let pointValue = event.target.classList[0];
+    let cat = event.target.classList[1]
+    console.log(pointValue)
+    // console.log(cat);
+    gameLogic.forEach(item => {
+        if(item === cat) {
+            console.log(cat);
+        } else {    
+        } 
+    })
+    
+}
 
