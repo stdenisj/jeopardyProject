@@ -229,6 +229,9 @@ let tile = document.createElement('div');
 const answerButtons = document.querySelectorAll('.answer');
 let pointValue = '';
 let cat = '';
+let points = 0;
+let score = 0;
+
 // This function creates a variable to create 'div' elements and a variable to locate the '#GameBoard'      element. Then it runs the populateGameBoard function. Lastly it finds the classes of the newly           created elements and stores the elements in an array.
 
 startButton.addEventListener('click', () => {
@@ -316,13 +319,6 @@ function populateGameBoard(tile, board) {
     }
 }
 
-// function assignCategories() {
-//     for (let q = 0; q < 5; q++)
-//     if (q === 0) {
-//         board.querySelector('catagory1')
-//     }
-// }
-
 function handleClickEvent() {
     event.preventDefault();
 }
@@ -376,7 +372,7 @@ function compareAnswer(userAnswer) {
             for (let q = 0; q < 5; q++) {
                 if (pointValue === gameLogic[c].value[q].name) {
                     if (userAnswer === gameLogic[c].value[q].correctAnswer) {
-                        console.log('YOU CORRECT');
+                        console.log('YOU CORRECT')
                     } else {
                         console.log('YOU ARE WRONG')
                     }
