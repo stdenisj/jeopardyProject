@@ -37,7 +37,7 @@ let gameLogic = [
         },                            
         fivehundred = {         
                 name:           'fivehundred',                   
-                question:       'question5',
+                question:       'cat1question5',
                 answerOne:      'answerOne',
                 answerTwo:      'answerTwo',
                 answerThree:    'answerThree',
@@ -49,7 +49,7 @@ let gameLogic = [
         value: [
             onehundred = {
                     name:           'onehundred',
-                    question:       'cat1question1',
+                    question:       'cat2question1',
                     answerOne:      'answerOne',
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
@@ -57,7 +57,7 @@ let gameLogic = [
             },
             twohundred = {
                     name:           'twohundred',                            
-                    question:       'cat1question2',
+                    question:       'cat2question2',
                     answerOne:      'answerOne',
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
@@ -65,7 +65,7 @@ let gameLogic = [
             },
             threehundred = {  
                     name:           'threehundred',     
-                    question:       'cat1question3',
+                    question:       'cat2question3',
                     answerOne:      'answerOne',
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
@@ -73,7 +73,7 @@ let gameLogic = [
             },
             fourhundred = {   
                     name:           'fourhundred', 
-                    question:       'cat1question4',
+                    question:       'cat2question4',
                     answerOne:      'answerOne',
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
@@ -81,7 +81,7 @@ let gameLogic = [
             },                            
             fivehundred = {         
                     name:           'fivehundred',                   
-                    question:       'question5',
+                    question:       'cat2question5',
                     answerOne:      'answerOne',
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
@@ -93,7 +93,7 @@ let gameLogic = [
         value: [
             onehundred = {
                     name:           'onehundred',
-                    question:       'cat1question1',
+                    question:       'cat3question1',
                     answerOne:      'answerOne',
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
@@ -101,7 +101,7 @@ let gameLogic = [
             },
             twohundred = {
                     name:           'twohundred',                            
-                    question:       'cat1question2',
+                    question:       'cat3question2',
                     answerOne:      'answerOne',
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
@@ -109,7 +109,7 @@ let gameLogic = [
             },
             threehundred = {  
                     name:           'threehundred',     
-                    question:       'cat1question3',
+                    question:       'cat3question3',
                     answerOne:      'answerOne',
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
@@ -117,7 +117,7 @@ let gameLogic = [
             },
             fourhundred = {   
                     name:           'fourhundred', 
-                    question:       'cat1question4',
+                    question:       'cat3question4',
                     answerOne:      'answerOne',
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
@@ -125,7 +125,7 @@ let gameLogic = [
             },                            
             fivehundred = {         
                     name:           'fivehundred',                   
-                    question:       'question5',
+                    question:       'cat3question5',
                     answerOne:      'answerOne',
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
@@ -137,7 +137,7 @@ let gameLogic = [
         value: [
             onehundred = {
                     name:           'onehundred',
-                    question:       'cat1question1',
+                    question:       'cat4question1',
                     answerOne:      'answerOne',
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
@@ -145,7 +145,7 @@ let gameLogic = [
             },
             twohundred = {
                     name:           'twohundred',                            
-                    question:       'cat1question2',
+                    question:       'cat4question2',
                     answerOne:      'answerOne',
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
@@ -153,7 +153,7 @@ let gameLogic = [
             },
             threehundred = {  
                     name:           'threehundred',     
-                    question:       'cat1question3',
+                    question:       'cat4question3',
                     answerOne:      'answerOne',
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
@@ -161,7 +161,7 @@ let gameLogic = [
             },
             fourhundred = {   
                     name:           'fourhundred', 
-                    question:       'cat1question4',
+                    question:       'cat4question4',
                     answerOne:      'answerOne',
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
@@ -169,7 +169,7 @@ let gameLogic = [
             },                            
             fivehundred = {         
                     name:           'fivehundred',                   
-                    question:       'question5',
+                    question:       'cat4question5',
                     answerOne:      'answerOne',
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
@@ -181,7 +181,7 @@ let gameLogic = [
         value: [
             onehundred = {
                     name:           'onehundred',
-                    question:       'cat1question1',
+                    question:       'cat5question1',
                     answerOne:      'answerOne',
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
@@ -189,7 +189,7 @@ let gameLogic = [
             },
             twohundred = {
                     name:           'twohundred',                            
-                    question:       'cat1question2',
+                    question:       'cat5question2',
                     answerOne:      'answerOne',
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
@@ -197,7 +197,7 @@ let gameLogic = [
             },
             threehundred = {  
                     name:           'threehundred',     
-                    question:       'cat1question3',
+                    question:       'cat5question3',
                     answerOne:      'answerOne',
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
@@ -205,7 +205,7 @@ let gameLogic = [
             },
             fourhundred = {   
                     name:           'fourhundred', 
-                    question:       'cat1question4',
+                    question:       'cat5question4',
                     answerOne:      'answerOne',
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
@@ -213,7 +213,7 @@ let gameLogic = [
             },                            
             fivehundred = {         
                     name:           'fivehundred',                   
-                    question:       'question5',
+                    question:       'cat5question5',
                     answerOne:      'answerOne',
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
@@ -348,7 +348,10 @@ function checkValue(pointValue, i) {
     for (let j = 0; j < 5; j++)
         if (pointValue === gameLogic[i].value[j].name) {
             console.log(gameLogic[i].value[j].name);
-            
+            document.querySelector('.modal-title').textContent = gameLogic[i].value[j].question;
+            document.querySelectorAll('label')[0].textContent = gameLogic[i].value[j].answerOne;
+            document.querySelectorAll('label')[1].textContent = gameLogic[i].value[j].answerTwo;
+            document.querySelectorAll('label')[2].textContent = gameLogic[i].value[j].answerThree;
 
 
 
