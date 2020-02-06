@@ -51,7 +51,7 @@ button {
 }
 
 
-.catagory {
+#Gameboard div{
     /* grid-area: fivehundred; */
     background: #060CE9;
     background-image: url(images/tilebackground.png);
