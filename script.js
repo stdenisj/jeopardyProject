@@ -201,6 +201,7 @@ let tile = document.createElement('div');
 
 startButton.addEventListener('click', () => {
     handleClickEvent();
+    console.log(event);
     if(board.lastChild == null) {
     createGameBoard();
     activateDivs();
@@ -213,6 +214,12 @@ function createGameBoard() {
 //  let board = document.querySelector('#Gameboard');
  populateGameBoard(tile, board);
  divsArr = document.querySelectorAll('div.onehundred, div.twohundred, div.threehundred,                                                       div.fourhundred, div.fivehundred')
+
+ divsArr.forEach(div => {
+    //  div.classList.add('btn'); 
+     div.setAttribute('data-toggle', 'modal');
+     div.setAttribute('data-target', '#exampleModalCenter')
+ })
 }
 
 // This function adds an event listener to each of the created boxes on the 'GameBoard'.
