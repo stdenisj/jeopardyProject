@@ -9,7 +9,7 @@ let gameLogic = [
                 answerOne:      'answerOne',
                 answerTwo:      'answerTwo',
                 answerThree:    'answerThree',
-                correctAnswer:   'correctAnswer',
+                correctAnswer:   'answerOne',
         },
         twohundred = {
                 name:           'twohundred',                            
@@ -227,6 +227,8 @@ let divsArr = [];
 let board = document.querySelector('#Gameboard');
 let tile = document.createElement('div');
 const answerButtons = document.querySelectorAll('.answer');
+let pointValue = '';
+let cat = '';
 // This function creates a variable to create 'div' elements and a variable to locate the '#GameBoard'      element. Then it runs the populateGameBoard function. Lastly it finds the classes of the newly           created elements and stores the elements in an array.
 
 startButton.addEventListener('click', () => {
@@ -255,6 +257,9 @@ function createGameBoard() {
 answerButtons.forEach(button => {
     button.addEventListener('click', () => {
         console.log(event);
+        userAnswer = event.target.nextSibling.textContent;
+        console.log(userAnswer);
+        compareAnswer(userAnswer);
     })
 });
 
@@ -311,29 +316,24 @@ function populateGameBoard(tile, board) {
     }
 }
 
-function assignCategories() {
-    for (let q = 0; q < 5; q++)
-    if (q === 0) {
-        board.querySelector('catagory1')
-    }
-}
+// function assignCategories() {
+//     for (let q = 0; q < 5; q++)
+//     if (q === 0) {
+//         board.querySelector('catagory1')
+//     }
+// }
 
 function handleClickEvent() {
     event.preventDefault();
 }
-    
-// function reload() {
-//     board.refresh;
-// }
-
 
 // This function pulls the classes from the 'click' event tied to the gameboard tiles.                      
 // It stores those classes in two variables and passese them into the 'CheckCat' function.
 // and the 'CheckValue' function located within 'CheckCat.
 
 function loadQestionAndAnswers (event) {
-    let pointValue = event.target.classList[0];
-    let cat = event.target.classList[1]
+    pointValue = event.target.classList[0];
+    cat = event.target.classList[1]
     // console.log(pointValue);
     // console.log(cat);
     checkCat(cat, pointValue);
@@ -368,4 +368,20 @@ function checkValue(pointValue, i) {
             document.querySelectorAll('label')[1].textContent = gameLogic[i].value[j].answerTwo;
             document.querySelectorAll('label')[2].textContent = gameLogic[i].value[j].answerThree;
         }
+};
+
+function compareAnswer(userAnswer) {
+    for (let c = 0; c < 5; c++) {
+        if (cat === gameLogic[c].name) {
+            for (let q = 0; q < 5; q++) {
+                if (pointValue === gameLogic[c].value[q].name) {
+                    if (userAnswer === gameLogic[c].value[q].correctAnswer) {
+                        console.log('YOU CORRECT');
+                    } else {
+                        console.log('YOU ARE WRONG')
+                    }
+                }
+            }
+        }
+    }
 }
