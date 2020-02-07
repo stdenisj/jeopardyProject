@@ -299,6 +299,7 @@ function activateDivs() {
             handleClickEvent();
             console.log(event);
             loadQestionAndAnswers(event);
+            event.target.style.visibility = 'hidden';
         });
     });
 }
