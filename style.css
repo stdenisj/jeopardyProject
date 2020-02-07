@@ -25,9 +25,17 @@ body {
 section {
     grid-area: body;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
+        ' . . points . . '
         ' . game game game . '
         ' . new . restart . ';
+}
+
+.displaypoints {
+    grid-area: points;
+    font-weight: 900;
+    font-size: 40px;
+    color: #d4af37;;
 }
 
 #Start {
