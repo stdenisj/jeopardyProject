@@ -400,10 +400,18 @@ function compareAnswer(userAnswer) {
                     if (userAnswer === gameLogic[c].value[q].correctAnswer) {
                         console.log('YOU CORRECT')
                         score += gameLogic[c].value[q].points
+                            if(score > 3750) {
+                                alert('YOU WIN');
+                                document.querySelector('#Gameboard').style.visibility = 'hidden';
+                            }
                         document.querySelector('.displaypoints').textContent = '$' + score;
                     } else {
                         console.log('YOU ARE WRONG')
                         score -= gameLogic[c].value[q].points
+                            if (score < -3750) {
+                                alert('YOU LOSE');
+                                document.querySelector('#Gameboard').style.visibility = 'hidden';
+                            }
                         document.querySelector('.displaypoints').textContent = '$' + score;
                     }
                 }
