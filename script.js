@@ -10,6 +10,7 @@ let gameLogic = [
                 answerTwo:      'answerTwo',
                 answerThree:    'answerThree',
                 correctAnswer:   'answerOne',
+                points:         100,
         },
         twohundred = {
                 name:           'twohundred',                            
@@ -18,6 +19,7 @@ let gameLogic = [
                 answerTwo:      'answerTwo',
                 answerThree:    'answerThree',
                 correctAnswer:  'correctAnswer',
+                points:         200,
         },
         threehundred = {  
                 name:           'threehundred',     
@@ -26,6 +28,7 @@ let gameLogic = [
                 answerTwo:      'answerTwo',
                 answerThree:    'answerThree',
                 correctAnswer:  'correctAnswer',
+                points:         300,
         },
         fourhundred = {   
                 name:           'fourhundred', 
@@ -34,6 +37,7 @@ let gameLogic = [
                 answerTwo:      'answerTwo',
                 answerThree:    'answerThree',
                 correctAnswer:  'correctAnswer',
+                points:         400,
         },                            
         fivehundred = {         
                 name:           'fivehundred',                   
@@ -42,10 +46,11 @@ let gameLogic = [
                 answerTwo:      'answerTwo',
                 answerThree:    'answerThree',
                 correctAnswer:  'correctAnswer',
+                points:         500,
         }],
     },
     catagory2 = {   
-        name: 'Manufacturer',
+        name: 'Makes',
         value: [
             onehundred = {
                     name:           'onehundred',
@@ -54,6 +59,7 @@ let gameLogic = [
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
                     correctAnswer:   'correctAnswer',
+                    points:         100,
             },
             twohundred = {
                     name:           'twohundred',                            
@@ -62,6 +68,7 @@ let gameLogic = [
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
                     correctAnswer:  'correctAnswer',
+                    points:         200,
             },
             threehundred = {  
                     name:           'threehundred',     
@@ -70,6 +77,7 @@ let gameLogic = [
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
                     correctAnswer:  'correctAnswer',
+                    points:         300,
             },
             fourhundred = {   
                     name:           'fourhundred', 
@@ -78,6 +86,7 @@ let gameLogic = [
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
                     correctAnswer:  'correctAnswer',
+                    points:         400,
             },                            
             fivehundred = {         
                     name:           'fivehundred',                   
@@ -86,6 +95,7 @@ let gameLogic = [
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
                     correctAnswer:  'correctAnswer',
+                    points:         500,
             }],
     },
     catagory3 = {   
@@ -98,6 +108,7 @@ let gameLogic = [
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
                     correctAnswer:   'correctAnswer',
+                    points:         100,
             },
             twohundred = {
                     name:           'twohundred',                            
@@ -106,6 +117,7 @@ let gameLogic = [
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
                     correctAnswer:  'correctAnswer',
+                    points:         200,
             },
             threehundred = {  
                     name:           'threehundred',     
@@ -114,6 +126,7 @@ let gameLogic = [
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
                     correctAnswer:  'correctAnswer',
+                    points:         300,
             },
             fourhundred = {   
                     name:           'fourhundred', 
@@ -122,6 +135,7 @@ let gameLogic = [
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
                     correctAnswer:  'correctAnswer',
+                    points:         400,
             },                            
             fivehundred = {         
                     name:           'fivehundred',                   
@@ -130,6 +144,7 @@ let gameLogic = [
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
                     correctAnswer:  'correctAnswer',
+                    points:         500,
             }],
     },
     catagory4 = {   
@@ -142,6 +157,7 @@ let gameLogic = [
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
                     correctAnswer:   'correctAnswer',
+                    points:         100,
             },
             twohundred = {
                     name:           'twohundred',                            
@@ -150,6 +166,7 @@ let gameLogic = [
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
                     correctAnswer:  'correctAnswer',
+                    points:         200,
             },
             threehundred = {  
                     name:           'threehundred',     
@@ -158,6 +175,7 @@ let gameLogic = [
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
                     correctAnswer:  'correctAnswer',
+                    points:         300,
             },
             fourhundred = {   
                     name:           'fourhundred', 
@@ -166,6 +184,7 @@ let gameLogic = [
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
                     correctAnswer:  'correctAnswer',
+                    points:         400,
             },                            
             fivehundred = {         
                     name:           'fivehundred',                   
@@ -174,6 +193,7 @@ let gameLogic = [
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
                     correctAnswer:  'correctAnswer',
+                    points:         500,
             }],
     },    
     catagory5 = {   
@@ -186,6 +206,7 @@ let gameLogic = [
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
                     correctAnswer:   'correctAnswer',
+                    points:         100,
             },
             twohundred = {
                     name:           'twohundred',                            
@@ -194,6 +215,7 @@ let gameLogic = [
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
                     correctAnswer:  'correctAnswer',
+                    points:         200,
             },
             threehundred = {  
                     name:           'threehundred',     
@@ -202,6 +224,7 @@ let gameLogic = [
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
                     correctAnswer:  'correctAnswer',
+                    points:         300,
             },
             fourhundred = {   
                     name:           'fourhundred', 
@@ -210,6 +233,7 @@ let gameLogic = [
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
                     correctAnswer:  'correctAnswer',
+                    points:         400,
             },                            
             fivehundred = {         
                     name:           'fivehundred',                   
@@ -218,6 +242,7 @@ let gameLogic = [
                     answerTwo:      'answerTwo',
                     answerThree:    'answerThree',
                     correctAnswer:  'correctAnswer',
+                    points:         500,
             }],
     },
 ]
@@ -373,8 +398,12 @@ function compareAnswer(userAnswer) {
                 if (pointValue === gameLogic[c].value[q].name) {
                     if (userAnswer === gameLogic[c].value[q].correctAnswer) {
                         console.log('YOU CORRECT')
+                        score += gameLogic[c].value[q].points
+                        document.querySelector('.displaypoints').textContent = '$' + score;
                     } else {
                         console.log('YOU ARE WRONG')
+                        score -= gameLogic[c].value[q].points
+                        document.querySelector('.displaypoints').textContent = '$' + score;
                     }
                 }
             }
