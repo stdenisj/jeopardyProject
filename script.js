@@ -5,47 +5,47 @@ let gameLogic = [
        value: [
         onehundred = {
                 name:           'onehundred',
-                question:       'cat1question1',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:   'answerOne',
+                question:       'This engine layout has all cylinders arranged in a row',
+                answerOne:      'What is an Inline-engine',
+                answerTwo:      'What is a Radial engine',
+                answerThree:    'What is a Sequential engine',
+                correctAnswer:   'What is an Inline-engine',
                 points:         100,
         },
         twohundred = {
                 name:           'twohundred',                            
-                question:       'cat1question2',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:  'correctAnswer',
+                question:       'This Engine type is commonly used for its ability to a greater number of cylinders in a compact space',
+                answerOne:      'What is a Flat-head engine',
+                answerTwo:      'What is a V engine',
+                answerThree:    'WHat is a Turbine engine',
+                correctAnswer:  'What is a V engine',
                 points:         200,
         },
         threehundred = {  
                 name:           'threehundred',     
-                question:       'cat1question3',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:  'correctAnswer',
+                question:       'This engine configuration gets it\'s name from a popular fighting style',
+                answerOne:      'What is a Judo-type engine',
+                answerTwo:      'What is a Boxer-type engine',
+                answerThree:    'What is a Drunken-type engine',
+                correctAnswer:  'What is a Boxer-type engine',
                 points:         300,
         },
         fourhundred = {   
                 name:           'fourhundred', 
-                question:       'cat1question4',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:  'correctAnswer',
+                question:       'This engine configuration, found in Bugattis and Bentlys, comes from in theory combining two \'VR\' engines in a V configuration ',
+                answerOne:      'What is a W Engine',
+                answerTwo:      'what is a Vee Engine',
+                answerThree:    'What is a Rotary Engine',
+                correctAnswer:  'What is a W Engine',
                 points:         400,
         },                            
         fivehundred = {         
                 name:           'fivehundred',                   
-                question:       'cat1question5',
-                answerOne:      'answerOne',
-                answerTwo:      'answerTwo',
-                answerThree:    'answerThree',
-                correctAnswer:  'correctAnswer',
+                question:       'This Engine configuration gets it\'s name from it\'s inventor, and instead of using pistons it spins a triangle-shaped rotor',
+                answerOne:      'What is a Otto-cycle engine',
+                answerTwo:      'What is a Atkinson-cycle engine',
+                answerThree:    'What is a Wankel engine',
+                correctAnswer:  'What is a Wankel engine',
                 points:         500,
         }],
     },
@@ -403,6 +403,7 @@ function compareAnswer(userAnswer) {
                             if(score > 3750) {
                                 alert('YOU WIN');
                             }
+                        alert('You are correct')
                         document.querySelector('.displaypoints').textContent = '$' + score;
                     } else {
                         console.log('YOU ARE WRONG')
@@ -411,6 +412,7 @@ function compareAnswer(userAnswer) {
                                 alert('YOU LOSE');
                                 document.querySelector('#Gameboard').style.visibility = 'hidden';
                             }
+                        alert(`I'm sorry, the correct answer is ${gameLogic[c].value[q].correctAnswer}`) 
                         document.querySelector('.displaypoints').textContent = '$' + score;
                     }
                 }
