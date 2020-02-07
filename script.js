@@ -152,52 +152,52 @@ let gameLogic = [
         value: [
             onehundred = {
                     name:           'onehundred',
-                    question:       'cat4question1',
-                    answerOne:      'answerOne',
-                    answerTwo:      'answerTwo',
-                    answerThree:    'answerThree',
-                    correctAnswer:   'correctAnswer',
+                    question:       'This Formula One driver won his 6th championship in 2019',
+                    answerOne:      'Who is Lewis Hamilton',
+                    answerTwo:      'Who is Sebastion Vettel',
+                    answerThree:    'Who is  Valtteri Bottas',
+                    correctAnswer:   'Who is Lewis Hamilton',
                     points:         100,
             },
             twohundred = {
                     name:           'twohundred',                            
-                    question:       'cat4question2',
-                    answerOne:      'answerOne',
-                    answerTwo:      'answerTwo',
-                    answerThree:    'answerThree',
-                    correctAnswer:  'correctAnswer',
+                    question:       'This French WRC driver won every championship from 2004-2012',
+                    answerOne:      'Who is Didier Auriol',
+                    answerTwo:      'Who is Sébastien Ogier',
+                    answerThree:    'Who is Sébastien Loeb',
+                    correctAnswer:  'Who is Sébastien Loeb',
                     points:         200,
             },
             threehundred = {  
                     name:           'threehundred',     
-                    question:       'cat4question3',
-                    answerOne:      'answerOne',
-                    answerTwo:      'answerTwo',
-                    answerThree:    'answerThree',
-                    correctAnswer:  'correctAnswer',
+                    question:       'This Nascar Legend was nicknamed \'The Intimidator\'',
+                    answerOne:      'Who is Dale Earnhardt',
+                    answerTwo:      'Who is Dale Earnhardt Jr',
+                    answerThree:    'Who is Jimmie Johnson',
+                    correctAnswer:  'Who is Dale Earnhardt',
                     points:         300,
             },
             fourhundred = {   
                     name:           'fourhundred', 
-                    question:       'cat4question4',
-                    answerOne:      'answerOne',
-                    answerTwo:      'answerTwo',
-                    answerThree:    'answerThree',
-                    correctAnswer:  'correctAnswer',
+                    question:       'After his death, this Formula One driver\'s South American country declared a three day mourning period',
+                    answerOne:      'Who is Juan Manuel Fangio',
+                    answerTwo:      'Who is Ayrton Senna',
+                    answerThree:    'José Carlos Pace',
+                    correctAnswer:  'Who is Ayrton Senna',
                     points:         400,
             },                            
             fivehundred = {         
                     name:           'fivehundred',                   
-                    question:       'cat4question5',
-                    answerOne:      'answerOne',
-                    answerTwo:      'answerTwo',
-                    answerThree:    'answerThree',
-                    correctAnswer:  'correctAnswer',
+                    question:       'In 1965, this driver won a Formula One championship, the Indy 500, the Tasman Series Cup, and the French Formula Two Championship',
+                    answerOne:      'Who is Jim Clack',
+                    answerTwo:      'Who is Jackie Stewart',
+                    answerThree:    'Who is Graham Hill',
+                    correctAnswer:  'Who is Jim Clack',
                     points:         500,
             }],
     },    
     catagory5 = {   
-        name: 'cat5',
+        name: 'History',
         value: [
             onehundred = {
                     name:           'onehundred',
@@ -408,7 +408,7 @@ function compareAnswer(userAnswer) {
                     } else {
                         console.log('YOU ARE WRONG')
                         score -= gameLogic[c].value[q].points
-                            if (score < -3750) {
+                            if (score < -1750) {
                                 alert('YOU LOSE');
                                 document.querySelector('#Gameboard').style.visibility = 'hidden';
                             }
