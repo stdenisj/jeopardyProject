@@ -35,7 +35,8 @@ section {
     grid-area: points;
     font-weight: 900;
     font-size: 40px;
-    color: #d4af37;;
+    color: #d4af37;
+    text-align: center;
 }
 
 #Start {
