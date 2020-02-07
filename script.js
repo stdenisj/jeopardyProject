@@ -140,10 +140,10 @@ let gameLogic = [
             fivehundred = {         
                     name:           'fivehundred',                   
                     question:       'This vehicle, sold from 1962-1964 and orignally sold for $18,000, was sold at auction in 2018 for $48.4 million',
-                    answerOne:      'What is a Ferrari 250 gto',
+                    answerOne:      'What is a Ferrari 250 GTO',
                     answerTwo:      'What is a Shelby Daytona',
                     answerThree:    'What is a Aston Martin DP215',
-                    correctAnswer:  'What is a Ferrari 250 gto',
+                    correctAnswer:  'What is a Ferrari 250 GTO',
                     points:         500,
             }],
     },
@@ -155,7 +155,7 @@ let gameLogic = [
                     question:       'This Formula One driver won his 6th championship in 2019',
                     answerOne:      'Who is Lewis Hamilton',
                     answerTwo:      'Who is Sebastion Vettel',
-                    answerThree:    'Who is  Valtteri Bottas',
+                    answerThree:    'Who is Valtteri Bottas',
                     correctAnswer:   'Who is Lewis Hamilton',
                     points:         100,
             },
@@ -189,10 +189,10 @@ let gameLogic = [
             fivehundred = {         
                     name:           'fivehundred',                   
                     question:       'In 1965, this driver won a Formula One championship, the Indy 500, the Tasman Series Cup, and the French Formula Two Championship',
-                    answerOne:      'Who is Jim Clack',
+                    answerOne:      'Who is Jim Clark',
                     answerTwo:      'Who is Jackie Stewart',
                     answerThree:    'Who is Graham Hill',
-                    correctAnswer:  'Who is Jim Clack',
+                    correctAnswer:  'Who is Jim Clark',
                     points:         500,
             }],
     },    
@@ -248,6 +248,7 @@ let gameLogic = [
 ]
 
 const startButton = document.querySelector('#Start')
+const resetButton = document.querySelector('#Reset')
 let divsArr = [];
 let board = document.querySelector('#Gameboard');
 let tile = document.createElement('div');
@@ -256,6 +257,7 @@ let pointValue = '';
 let cat = '';
 let points = 0;
 let score = 0;
+let remainingPoints = 7500;
 
 // This function creates a variable to create 'div' elements and a variable to locate the '#GameBoard'      element. Then it runs the populateGameBoard function. Lastly it finds the classes of the newly           created elements and stores the elements in an array.
 
@@ -268,6 +270,10 @@ startButton.addEventListener('click', () => {
 } else {}
 }
 )
+
+resetButton.addEventListener('click', () => {
+    document.location.reload()
+})
 
 function createGameBoard() {
 //  let tile = document.createElement('div');
@@ -400,7 +406,8 @@ function compareAnswer(userAnswer) {
                     if (userAnswer === gameLogic[c].value[q].correctAnswer) {
                         console.log('YOU CORRECT')
                         score += gameLogic[c].value[q].points
-                            if(score > 3750) {
+                        remainingPoints -= gameLogic[c].value[q].points
+                            if((score > 2000) && (remainingPoints === 0)) {
                                 alert('YOU WIN');
                             }
                         alert('You are correct')
@@ -408,7 +415,8 @@ function compareAnswer(userAnswer) {
                     } else {
                         console.log('YOU ARE WRONG')
                         score -= gameLogic[c].value[q].points
-                            if (score < -1750) {
+                        remainingPoints -= gameLogic[c].value[q].points
+                            if ((score < -1750) && (remainingPoints === 0)) {
                                 alert('YOU LOSE');
                                 document.querySelector('#Gameboard').style.visibility = 'hidden';
                             }
