@@ -402,7 +402,6 @@ function compareAnswer(userAnswer) {
                         score += gameLogic[c].value[q].points
                             if(score > 3750) {
                                 alert('YOU WIN');
-                                document.querySelector('#Gameboard').style.visibility = 'hidden';
                             }
                         document.querySelector('.displaypoints').textContent = '$' + score;
                     } else {
