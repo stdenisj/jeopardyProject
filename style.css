@@ -28,7 +28,7 @@ section {
     grid-template-areas:
         ' . . points . . '
         ' . game game game . '
-        ' . new . restart . ';
+        ' . new . restart .';
 }
 
 .displaypoints {
@@ -96,6 +96,7 @@ section {
     text-shadow: 5px 2px 10px black;
     overflow-wrap: break-word;
     letter-spacing: 2px;
+    margin: -2px;
 }
  .onehundred {
     /* grid-area: onehundred; */
@@ -180,4 +181,13 @@ section {
 
 #exampleModalCenter {
     background: black;
+}
+
+.navbar {
+    background: transparent!important;
+}
+
+.bg-dark .p-4 {
+    background: transparent!important;
+    text-align: center;
 }
