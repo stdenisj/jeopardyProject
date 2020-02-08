@@ -1,3 +1,4 @@
+//  This is gameLogic, it contains the categories, point values, questions and answers to be used later. It is an array of objects called 'category + the column number'. Inside each category is the name of the category and an array containing objects with the value name of each row. Each object contains the name of the value, the question, 3 multiple choic answers, the correct answer, and the number of points associated with question.
 
 let gameLogic = [
     category1 = {   
@@ -245,67 +246,67 @@ let gameLogic = [
                     points:         500,
             }],
     },
-]
+];
 
-const startButton = document.querySelector('#Start')
-const resetButton = document.querySelector('#Reset')
+// These are global veriables that are used through this code.
+
+// These are the start and reset buttons.
+const startButton = document.querySelector('#Start');
+const resetButton = document.querySelector('#Reset');
+
+// These variables hold the functions to create an element and to select the gameboard div. This is declares an empty array to hold each gameboard element after it is create.
 let divsArr = [];
-let board = document.querySelector('#Gameboard');
-let tile = document.createElement('div');
+const board = document.querySelector('#Gameboard');
+const tile = document.createElement('div');
+
+// This creates an array to store the multiple choice answer buttons.
 const answerButtons = document.querySelectorAll('.answer');
+
+// These are variables that store the point value and category information from the event to be used to pull the correct information.
 let pointValue = '';
 let cat = '';
+
+// Theses variables store the points that will be awarded/subtracted, the sore to be displayed and compared at the end to decide if you win/lose, and the remaining points on the board, if no points remains the game ends.
 let points = 0;
 let score = 0;
 let remainingPoints = 7500;
-let audio = new Audio('sounds/music.mp3')
-// This function creates a variable to create 'div' elements and a variable to locate the '#GameBoard'      element. Then it runs the populateGameBoard function. Lastly it finds the classes of the newly           created elements and stores the elements in an array.
 
+// This stores the Jeopardy thinking music as a variable to be played later.
+let audio = new Audio('sounds/music.mp3');
+
+
+// This adds an event listener to the start button. When clicked it runs the 'preventDefault' function. Then it checks to see if the element stored in the board variable has any child customElements, if it does not it runs the 'createGameboard' and 'activateDivs' functions. If there are child elements then the start button will no run any functions.
 startButton.addEventListener('click', () => {
     handleClickEvent();
-    console.log(event);
     if(board.lastChild == null) {
-    createGameBoard();
-    activateDivs();
-} else {}
-}
-)
-
-resetButton.addEventListener('click', () => {
-    document.location.reload()
-})
-
-function createGameBoard() {
-//  let tile = document.createElement('div');
-//  let board = document.querySelector('#Gameboard');
- populateGameBoard(tile, board);
- divsArr = document.querySelectorAll('div.onehundred, div.twohundred, div.threehundred,                                                       div.fourhundred, div.fivehundred')
-
- divsArr.forEach(div => {
-    //  div.classList.add('btn'); 
-     div.setAttribute('data-toggle', 'modal');
-     div.setAttribute('data-target', '#exampleModalCenter')
- })
-}
-
-answerButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        console.log(event);
-        userAnswer = event.target.nextSibling.textContent;
-        console.log(userAnswer);
-        audio.pause();
-        compareAnswer(userAnswer);
-
-    })
+        createGameBoard();
+        activateDivs();
+    };
 });
 
-// This function adds an event listener to each of the created boxes on the 'GameBoard'.
+// This adds an event listener to the reset button. When clicked it will run the reload method on the document location causing the webpage to refresh.
+resetButton.addEventListener('click', () => {
+    document.location.reload();
+});
 
+
+// This is the 'createGameBoard function.
+// This function runs the 'populateGameBoard' function using the 'tile' and 'board' variables to create the rows and columns for the game. Then it collects each cell base on the class name assigned to each and stores them in an Array. Then it goes through each item in the array and assigns attributes and values to each. The attributes are 'data-toggle' and 'data-target' with values 'modal' and '#ecampleModalCenter'.
+function createGameBoard() {
+    populateGameBoard(tile, board);
+    divsArr = document.querySelectorAll('div.onehundred, div.twohundred, div.threehundred, div.fourhundred, div.fivehundred');
+    divsArr.forEach(div => { 
+        div.setAttribute('data-toggle', 'modal');
+        div.setAttribute('data-target', '#exampleModalCenter');
+ });
+};
+
+// This is the activateDivs function.
+// This function goes through and adds an event listener to every gameBoard cell. When clicked it runs the 'handleClickEvent' function then it runs the 'loadQuestionAndAnswers function passing through the even data. Then it sets the event target to be hidden, allowing the function to still hold the space on the board but also not be clicked on again. Then it plays the audio variable.
 function activateDivs() {
     divsArr.forEach(div => {
         div.addEventListener('click', (event) => {
             handleClickEvent();
-            console.log(event);
             loadQestionAndAnswers(event);
             event.target.style.visibility = 'hidden';
             audio.play();
@@ -313,43 +314,43 @@ function activateDivs() {
     });
 }
 
-// This function creates 30 div boxes. Then it goes through each row adding the 'category' class,           'value' class, and the textcontent.
+// This is the populateGameBoard function.
+// This function creates a loop that runs 30 times. Each time the loop is run it creates a new div element and appends it to the board variable as a child element. Then it checks the loop number. Based on which number loop it assigns one or two class nammes and changes the text content of the element to reflect the row value or category name.
 function populateGameBoard(tile, board) {
- let CarArr = Object.keys(gameLogic);
- let t = 1
+    let t = 1
     while (t <= 30) {
         tile = document.createElement('div');
-       board.appendChild(tile);
-    if (t <= 5) {
-        let l =gameLogic[t-1].name
-        board.lastChild.classList.add(l);
-        board.lastChild.textContent = gameLogic[t-1].name;   
-    } else if (t <= 10) {
-        let z = t - 6;
-        let y = gameLogic[z].name
-        board.lastChild.classList.add('onehundred', y);
-        board.lastChild.textContent = '$100';    
-    } else if (t <= 15){
-        let z = t - 11;
-        let y = gameLogic[z].name
-        board.lastChild.classList.add('twohundred', y);
-        board.lastChild.textContent = '$200'; 
-    } else if (t <= 20) {
-        let z = t - 16;
-        let y = gameLogic[z].name
-        board.lastChild.classList.add('threehundred', y);
-        board.lastChild.textContent = '$300';
-    } else if (t <= 25) {
-        let z = t - 21;
-        let y = gameLogic[z].name
-        board.lastChild.classList.add('fourhundred', y);
-        board.lastChild.textContent = '$400';
-    } else if (t <= 30) {
-        let z = t - 26;
-        let y = gameLogic[z].name
-        board.lastChild.classList.add('fivehundred', y);
-        board.lastChild.textContent = '$500';  
-    }
+        board.appendChild(tile);
+        if (t <= 5) {
+            let l =gameLogic[t-1].name
+            board.lastChild.classList.add(l);
+            board.lastChild.textContent = gameLogic[t-1].name;   
+        } else if (t <= 10) {
+            let z = t - 6;
+            let y = gameLogic[z].name
+            board.lastChild.classList.add('onehundred', y);
+            board.lastChild.textContent = '$100';    
+        } else if (t <= 15){
+            let z = t - 11;
+            let y = gameLogic[z].name
+            board.lastChild.classList.add('twohundred', y);
+            board.lastChild.textContent = '$200'; 
+        } else if (t <= 20) {
+            let z = t - 16;
+            let y = gameLogic[z].name
+            board.lastChild.classList.add('threehundred', y);
+            board.lastChild.textContent = '$300';
+        } else if (t <= 25) {
+            let z = t - 21;
+            let y = gameLogic[z].name
+            board.lastChild.classList.add('fourhundred', y);
+            board.lastChild.textContent = '$400';
+        } else if (t <= 30) {
+            let z = t - 26;
+            let y = gameLogic[z].name
+            board.lastChild.classList.add('fivehundred', y);
+            board.lastChild.textContent = '$500';  
+        }
     t++
     }
 }
@@ -392,14 +393,25 @@ function checkCat(cat, pointValue) {
 
 function checkValue(pointValue, i) {
     for (let j = 0; j < 5; j++)
-        if (pointValue === gameLogic[i].value[j].name) {
-            console.log(gameLogic[i].value[j].name);
-            document.querySelector('.modal-title').textContent = gameLogic[i].value[j].question.toUpperCase();
-            document.querySelectorAll('label')[0].textContent = gameLogic[i].value[j].answerOne.toUpperCase();
-            document.querySelectorAll('label')[1].textContent = gameLogic[i].value[j].answerTwo.toUpperCase();
-            document.querySelectorAll('label')[2].textContent = gameLogic[i].value[j].answerThree.toUpperCase();
-        }
+    if (pointValue === gameLogic[i].value[j].name) {
+        console.log(gameLogic[i].value[j].name);
+        document.querySelector('.modal-title').textContent = gameLogic[i].value[j].question.toUpperCase();
+        document.querySelectorAll('label')[0].textContent = gameLogic[i].value[j].answerOne.toUpperCase();
+        document.querySelectorAll('label')[1].textContent = gameLogic[i].value[j].answerTwo.toUpperCase();
+        document.querySelectorAll('label')[2].textContent = gameLogic[i].value[j].answerThree.toUpperCase();
+    }
 };
+
+answerButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        console.log(event);
+        userAnswer = event.target.nextSibling.textContent;
+        console.log(userAnswer);
+        audio.pause();
+        compareAnswer(userAnswer);
+
+    })
+});
 
 function compareAnswer(userAnswer) {
     for (let c = 0; c < 5; c++) {
