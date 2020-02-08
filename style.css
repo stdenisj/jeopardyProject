@@ -37,14 +37,33 @@ section {
     font-size: 40px;
     color: #d4af37;
     text-align: center;
+    text-rendering: optimizeLegibility;
 }
 
 #Start {
     grid-area: new;
+    width: auto;
+    margin: 10px auto;
+    background: #060CE9;
+    background-image: url(images/tilebackground.png);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    color: #d4af37;
+    text-align: justify;
+    text-shadow: 5px 2px 10px black;
 }
 
 #Reset {
     grid-area: restart;
+    width: auto;
+    margin: 10px auto;
+    background: #060CE9;
+    background-image: url(images/tilebackground.png);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    color: #d4af37;
+    text-align: justify;
+    text-shadow: 5px 2px 10px black;
 }
 
 
@@ -76,6 +95,7 @@ section {
     text-align: center;
     text-shadow: 5px 2px 10px black;
     overflow-wrap: break-word;
+    letter-spacing: 2px;
 }
  .onehundred {
     /* grid-area: onehundred; */
@@ -146,4 +166,18 @@ section {
     background-image: url(images/tilebackground.png);
     color: white;
     font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    text-shadow: 4px 3px 2px black;
+    letter-spacing: 2px;
+}
+
+.modal-title {
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 4px 3px 2px black;
+    letter-spacing: 2px;
+}
+
+#exampleModalCenter {
+    background: black;
 }
