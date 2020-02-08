@@ -301,20 +301,20 @@ function createGameBoard() {
  });
 };
 
-// This is the activateDivs function.
+// This is the 'activateDivs' function.
 // This function goes through and adds an event listener to every gameBoard cell. When clicked it runs the 'handleClickEvent' function then it runs the 'loadQuestionAndAnswers function passing through the even data. Then it sets the event target to be hidden, allowing the function to still hold the space on the board but also not be clicked on again. Then it plays the audio variable.
 function activateDivs() {
     divsArr.forEach(div => {
         div.addEventListener('click', (event) => {
             handleClickEvent();
-            loadQestionAndAnswers(event);
+            loadQuestionAndAnswers(event);
             event.target.style.visibility = 'hidden';
             audio.play();
         });
     });
 }
 
-// This is the populateGameBoard function.
+// This is the 'populateGameBoard' function.
 // This function creates a loop that runs 30 times. Each time the loop is run it creates a new div element and appends it to the board variable as a child element. Then it checks the loop number. Based on which number loop it assigns one or two class nammes and changes the text content of the element to reflect the row value or category name.
 function populateGameBoard(tile, board) {
     let t = 1
@@ -355,42 +355,26 @@ function populateGameBoard(tile, board) {
     }
 }
 
-function handleClickEvent() {
-    event.preventDefault();
-}
-
-// This function pulls the classes from the 'click' event tied to the gameboard tiles.                      
-// It stores those classes in two variables and passese them into the 'CheckCat' function.
-// and the 'CheckValue' function located within 'CheckCat.
-
-function loadQestionAndAnswers (event) {
+// This is the 'loadQuestionsAndAnswers' function.
+// This function pulls the class names from the 'click' event tied to the activateDivs function. It stores those classes in two variables and passese them into the 'CheckCat' function.
+function loadQuestionAndAnswers (event) {
     pointValue = event.target.classList[0];
     cat = event.target.classList[1]
-    // console.log(pointValue);
-    // console.log(cat);
     checkCat(cat, pointValue);
 }
 
-// This function runs during the 'LoadQuestionAndAnswers' function
-// This function takes the column class stored in the 'loadQuestionAndAnswers' function.
-// It loops throught the 'gameLogic' array and compares the variable to each object name.
-// When it finds a matching name runs the 'checkValue' function using the found object.
-
+// This is the 'checkCat' function.
+// This function takes the column  and row classes stored in the 'loadQuestionAndAnswers' function. It loops through the 'gameLogic' array and compares the category variable to each object name. When it finds a matching name it runs the 'checkValue' function using the object that has the same category name.
 function checkCat(cat, pointValue) {
     for (let i = 0; i < gameLogic.length; i++) {
         if (cat === gameLogic[i].name) {
-            // console.log(gameLogic[i].name);
             checkValue(pointValue, i);
         }
     }
 }
 
-// This function runs during the 'CheckCat' function
-// It uses the value class variable stored in the 'loadQuestionsAndAnswers' function the values stored
-// in the object taken from the 'checkCat' function. Then it loops through the object comparing the values.
-// When a matching value is found, the function changes the text content of the modal title and labels of 
-// each answer button to the information stored for that column and row.
-
+// This is the 'checkValue' function.
+// This function uses the row class variable stored in the 'loadQuestionsAndAnswers' and the object located in the 'checkCat' function. Then it loops through the object comparing the row values. When the matching value is found, the function changes the text content of the modal title and labels of each answer button to the information stored for that found column and row.
 function checkValue(pointValue, i) {
     for (let j = 0; j < 5; j++)
     if (pointValue === gameLogic[i].value[j].name) {
@@ -402,11 +386,10 @@ function checkValue(pointValue, i) {
     }
 };
 
+// This loops through the multiple choice answer buttons and assigns an event listener to each on. When 'clicked' it stores the 'textContent of the label element next to clicked button in a variable. Then it pauses the audio started in the 'activateDivs' function. The new variable is passed into the 'compareAnswer' function.
 answerButtons.forEach(button => {
     button.addEventListener('click', () => {
-        console.log(event);
         userAnswer = event.target.nextSibling.textContent;
-        console.log(userAnswer);
         audio.pause();
         compareAnswer(userAnswer);
 
@@ -419,7 +402,6 @@ function compareAnswer(userAnswer) {
             for (let q = 0; q < 5; q++) {
                 if (pointValue === gameLogic[c].value[q].name) {
                     if (userAnswer === gameLogic[c].value[q].correctAnswer.toUpperCase()) {
-                        console.log('YOU CORRECT')
                         score += gameLogic[c].value[q].points
                         remainingPoints -= gameLogic[c].value[q].points
                             if((score > 2000) && (remainingPoints === 0)) {
@@ -428,10 +410,9 @@ function compareAnswer(userAnswer) {
                         alert('You are correct')
                         document.querySelector('.displaypoints').textContent = '$' + score;
                     } else {
-                        console.log('YOU ARE WRONG')
                         score -= gameLogic[c].value[q].points
                         remainingPoints -= gameLogic[c].value[q].points
-                            if ((score < -1750) && (remainingPoints === 0)) {
+                            if ((score < 2000) && (remainingPoints === 0)) {
                                 alert('YOU LOSE');
                                 document.querySelector('#Gameboard').style.visibility = 'hidden';
                             }
@@ -442,4 +423,8 @@ function compareAnswer(userAnswer) {
             }
         }
     }
+}
+    
+function handleClickEvent() {
+    event.preventDefault();
 }
