@@ -1,6 +1,6 @@
 
 let gameLogic = [
-    catagory1 = {   
+    category1 = {   
        name: 'Engines',
        value: [
         onehundred = {
@@ -17,7 +17,7 @@ let gameLogic = [
                 question:       'This Engine type is commonly used for its ability to a greater number of cylinders in a compact space',
                 answerOne:      'What is a Flat-head engine',
                 answerTwo:      'What is a V engine',
-                answerThree:    'WHat is a Turbine engine',
+                answerThree:    'What is a Turbine engine',
                 correctAnswer:  'What is a V engine',
                 points:         200,
         },
@@ -49,12 +49,12 @@ let gameLogic = [
                 points:         500,
         }],
     },
-    catagory2 = {   
+    category2 = {   
         name: 'Makes',
         value: [
             onehundred = {
                     name:           'onehundred',
-                    question:       'Camery, Tacoma, Supra',
+                    question:       'Camry, Tacoma, Supra',
                     answerOne:      'Who is Toyota',
                     answerTwo:      'Who is Tesla',
                     answerThree:    'Who is Honda',
@@ -98,7 +98,7 @@ let gameLogic = [
                     points:         500,
             }],
     },
-    catagory3 = {   
+    category3 = {   
         name: 'Models',
         value: [
             onehundred = {
@@ -113,15 +113,15 @@ let gameLogic = [
             twohundred = {
                     name:           'twohundred',                            
                     question:       'An all-new version of this classic car was introduced in 1998',
-                    answerOne:      'What is the Volkswagen Bettle',
+                    answerOne:      'What is the Volkswagen Beetle',
                     answerTwo:      'What is the Fiat 500',
                     answerThree:    'What is the Mini cooper',
-                    correctAnswer:  'What is the Volkswagen Bettle',
+                    correctAnswer:  'What is the Volkswagen Beetle',
                     points:         200,
             },
             threehundred = {  
                     name:           'threehundred',     
-                    question:       'This automotive legand is generally considered to be the first "pony car"',
+                    question:       'This automotive legend is generally considered to be the first "pony car"',
                     answerOne:      'What is the Chevrolet Camaro',
                     answerTwo:      'What is the Ford Mustang',
                     answerThree:    'What is the Dodge Challenger',
@@ -130,8 +130,8 @@ let gameLogic = [
             },
             fourhundred = {   
                     name:           'fourhundred', 
-                    question:       'It might not suprise you that according to the NICB, this vehicle was ranked as the second most stolen vehicle of 2019',
-                    answerOne:      'What is the Toyota Camery',
+                    question:       'It might not surprise you that according to the NICB, this vehicle was ranked as the second most stolen vehicle of 2019',
+                    answerOne:      'What is the Toyota Camry',
                     answerTwo:      'What is the Nissan Maxima',
                     answerThree:    'What is the Honda Accord',
                     correctAnswer:  'What is the Honda Accord',
@@ -139,7 +139,7 @@ let gameLogic = [
             },                            
             fivehundred = {         
                     name:           'fivehundred',                   
-                    question:       'This vehicle, sold from 1962-1964 and orignally sold for $18,000, was sold at auction in 2018 for $48.4 million',
+                    question:       'This vehicle, sold from 1962-1964 and originally sold for $18,000, was sold at auction in 2018 for $48.4 million',
                     answerOne:      'What is a Ferrari 250 GTO',
                     answerTwo:      'What is a Shelby Daytona',
                     answerThree:    'What is a Aston Martin DP215',
@@ -147,7 +147,7 @@ let gameLogic = [
                     points:         500,
             }],
     },
-    catagory4 = {   
+    category4 = {   
         name: 'Racing',
         value: [
             onehundred = {
@@ -196,13 +196,13 @@ let gameLogic = [
                     points:         500,
             }],
     },    
-    catagory5 = {   
+    category5 = {   
         name: 'History',
         value: [
             onehundred = {
                     name:           'onehundred',
                     question:       'This vehicle is considered the first affordable automoblie and brought the assembly line to the automotive industry',
-                    answerOne:      'What is the Ford Madel N',
+                    answerOne:      'What is the Ford Model N',
                     answerTwo:      'What is the Ford Model A',
                     answerThree:    'What is the Ford Model T',
                     correctAnswer:  'What is the Ford Model T',
@@ -237,7 +237,7 @@ let gameLogic = [
             },                            
             fivehundred = {         
                     name:           'fivehundred',                   
-                    question:       'This automotive maufactorur uses the name of one of it\'s founders, who is considered to have made the first production automobile',
+                    question:       'This automotive manufacturer uses the name of one of it\'s founders, who is considered to have made the first production automobile',
                     answerOne:      'Who is Henry Ford',
                     answerTwo:      'Who is Ferdinand Porsche',
                     answerThree:    'Who is Karl Benz',
@@ -258,7 +258,7 @@ let cat = '';
 let points = 0;
 let score = 0;
 let remainingPoints = 7500;
-
+let audio = new Audio('sounds/music.mp3')
 // This function creates a variable to create 'div' elements and a variable to locate the '#GameBoard'      element. Then it runs the populateGameBoard function. Lastly it finds the classes of the newly           created elements and stores the elements in an array.
 
 startButton.addEventListener('click', () => {
@@ -293,7 +293,9 @@ answerButtons.forEach(button => {
         console.log(event);
         userAnswer = event.target.nextSibling.textContent;
         console.log(userAnswer);
+        audio.pause();
         compareAnswer(userAnswer);
+
     })
 });
 
@@ -306,11 +308,12 @@ function activateDivs() {
             console.log(event);
             loadQestionAndAnswers(event);
             event.target.style.visibility = 'hidden';
+            audio.play();
         });
     });
 }
 
-// This function creates 30 div boxes. Then it goes through each row adding the 'catagory' class,           'value' class, and the textcontent.
+// This function creates 30 div boxes. Then it goes through each row adding the 'category' class,           'value' class, and the textcontent.
 function populateGameBoard(tile, board) {
  let CarArr = Object.keys(gameLogic);
  let t = 1
@@ -391,10 +394,10 @@ function checkValue(pointValue, i) {
     for (let j = 0; j < 5; j++)
         if (pointValue === gameLogic[i].value[j].name) {
             console.log(gameLogic[i].value[j].name);
-            document.querySelector('.modal-title').textContent = gameLogic[i].value[j].question;
-            document.querySelectorAll('label')[0].textContent = gameLogic[i].value[j].answerOne;
-            document.querySelectorAll('label')[1].textContent = gameLogic[i].value[j].answerTwo;
-            document.querySelectorAll('label')[2].textContent = gameLogic[i].value[j].answerThree;
+            document.querySelector('.modal-title').textContent = gameLogic[i].value[j].question.toUpperCase();
+            document.querySelectorAll('label')[0].textContent = gameLogic[i].value[j].answerOne.toUpperCase();
+            document.querySelectorAll('label')[1].textContent = gameLogic[i].value[j].answerTwo.toUpperCase();
+            document.querySelectorAll('label')[2].textContent = gameLogic[i].value[j].answerThree.toUpperCase();
         }
 };
 
@@ -403,7 +406,7 @@ function compareAnswer(userAnswer) {
         if (cat === gameLogic[c].name) {
             for (let q = 0; q < 5; q++) {
                 if (pointValue === gameLogic[c].value[q].name) {
-                    if (userAnswer === gameLogic[c].value[q].correctAnswer) {
+                    if (userAnswer === gameLogic[c].value[q].correctAnswer.toUpperCase()) {
                         console.log('YOU CORRECT')
                         score += gameLogic[c].value[q].points
                         remainingPoints -= gameLogic[c].value[q].points
