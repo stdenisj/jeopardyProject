@@ -401,7 +401,6 @@ function checkCat(cat, pointValue) {
 function checkValue(pointValue, i) {
   for (let j = 0; j < 5; j++)
     if (pointValue === gameLogic[i].value[j].name) {
-      console.log(gameLogic[i].value[j].name);
       document.querySelector(".modal-title").textContent = gameLogic[i].value[
         j
       ].question.toUpperCase();
