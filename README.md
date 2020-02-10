@@ -21,4 +21,4 @@ Project Planning & Text Editor - Trello and Visual Studios Code
 
 WireFrame
 
-![Wireframe](images/project1_wireFrame.jpg)
+![Wireframe](jeopardyProject/images/project1_wireFrame.JPG)
