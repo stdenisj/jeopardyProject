@@ -425,8 +425,8 @@ let gameLogic = [
     });
   });
   
-  // This is the 'compareAnswer function
-  // This function starts by looping through the cate
+//  This is the 'compareAnswer function. This function takes the answer that the user selected and loops through the obect to find the question. When it finds the question it will start to loop through to find the point value. When it finds the matching category and point value. It will compare the users answer to the correct answer. If the answer is correct/wrong it will add/subtract the point value to the score, subtract that value from the remaining points. Then it will check the value of the remaining points, if it is zero it will end the game and display an alert. If it is not the end of the game it will display an alert and will update the displayed score
+  
   function compareAnswer(userAnswer) {
     for (let c = 0; c < 5; c++) {
       if (cat === gameLogic[c].name) {
