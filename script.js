@@ -355,41 +355,41 @@ let gameLogicTwo = [
       value: [
         (onehundred = {
           name: "onehundred",
-          question: "This Formula One driver won his 6th championship in 2019",
-          answers: ["Who is Lewis Hamilton", "Who is Sebastion Vettel", "Who is Valtteri Bottas"],
-          correctAnswer: "Who is Lewis Hamilton",
-          points: 100
+          question: "Built ___ tough",
+          answers: ["Who is ford", "Who is chevrolet", "Who is dodge"],
+          correctAnswer: "Who is ford",
+          points: 600
         }),
         (twohundred = {
           name: "twohundred",
           question:
-            "This French WRC driver won every championship from 2004-2012",
-          answers: ["Who is Didier Auriol", "Who is Sébastien Ogier", "Who is Sébastien Loeb"],
-          correctAnswer: "Who is Sébastien Loeb",
-          points: 200
+            "This company makes the hellephant Crate engine",
+          answers: ["Who is dodge", "Who is shelby", "Who is tesla"],
+          correctAnswer: "Who is dodge",
+          points: 700
         }),
         (threehundred = {
           name: "threehundred",
-          question: "This Nascar Legend was nicknamed 'The Intimidator'",
-          answers: ["Who is Dale Earnhardt", "Who is Dale Earnhardt Jr", "Who is Jimmie Johnson"],
-          correctAnswer: "Who is Dale Earnhardt",
-          points: 300
+          question: "This vehicle was sold in australia as the holden Commodore'",
+          answers: ["Who is the pontiac g8", "Who is the chevrolet corvette", "Who is the ford mustang"],
+          correctAnswer: "Who is the pontiac g8",
+          points: 800
         }),
         (fourhundred = {
           name: "fourhundred",
           question:
-            "After his death, this Formula One driver's South American country declared a three day mourning period",
-          answers: ["Who is Juan Manuel Fangio", "Who is Ayrton Senna", "José Carlos Pace"],
-          correctAnswer: "Who is Ayrton Senna",
-          points: 400
+            "this company battled ferrari at le mans, winning in 1967, 1968, and 1969",
+          answers: ["Who is cadillac", "Who is ford", "who is buick"],
+          correctAnswer: "Who is ford",
+          points: 900
         }),
         (fivehundred = {
           name: "fivehundred",
           question:
-            "In 1965, this driver won a Formula One championship, the Indy 500, the Tasman Series Cup, and the French Formula Two Championship",
-          answers: ["Who is Jim Clark", "Who is Jackie Stewart", "Who is Graham Hill"],
-          correctAnswer: "Who is Jim Clark",
-          points: 500
+            "After over fifty years of rumors, this company will finally release a mid-engine version of their iconic sports car",
+          answers: ["Who is ford", "Who is dodge", "Who is chevrolet"],
+          correctAnswer: "Who is chevrolet",
+          points: 1000
         })
       ]
     }),
@@ -398,43 +398,42 @@ let gameLogicTwo = [
       value: [
         (onehundred = {
           name: "onehundred",
-          question:
-            "This vehicle is considered the first affordable automoblie and brought the assembly line to the automotive industry",
-          answers: ["What is the Ford Model N", "What is the Ford Model A", "What is the Ford Model T"],
-          correctAnswer: "What is the Ford Model T",
-          points: 100
+          question: "This manufacturer was started to spite Enzo Ferrari",
+          answers: ["Who is Lamborgini", "Who is pagani", "Who is Alfa Romeo"],
+          correctAnswer: "Who is Lamborgini",
+          points: 600
         }),
         (twohundred = {
           name: "twohundred",
           question:
-            "Ferdinand Porsche is credited for designing this German 'people's car'",
-          answers: ["What is the Fiat 500", "What is the Volkswagen Beetle", "What is the Porsche 356"],
-          correctAnswer: "What is the Volkswagen Beetle",
-          points: 200
+            "This company call maranello home",
+          answers: ["who is alfa romeo", "Who is ferrari", "Who is fiat"],
+          correctAnswer: "Who is ferrari",
+          points: 700
         }),
         (threehundred = {
           name: "threehundred",
           question:
-            "This vehicle has been the top selling vehicle in America for 42 years",
-          answers: ["What is the Ford F-Series", "What is the Dodge Ram", "What is the Chevrolet Silverado"],
-          correctAnswer: "What is the Ford F-Series",
-          points: 300
+            "this manufacturer has a long history of rally success",
+          answers: ["Who is ferrari", "Who is lancia", "Who is lamborgini"],
+          correctAnswer: "Who is lancia",
+          points: 800
         }),
         (fourhundred = {
           name: "fourhundred",
           question:
-            "This two-seat sports car was the first dual rotor rotary-engined car",
-          answers: ["What is the Mazda Cosmo", "What is the Mazda RX-7", "What is the Mazda Rotary Pickup"],
-          correctAnswer: "What is the Mazda Cosmo",
-          points: 400
+            "This Manufacturer uses are raging bull as their emblem",
+          answers: ["who is ferrari", "who is pagani", "who is lamborgini"],
+          correctAnswer:  "who is lamborgini",
+          points: 900
         }),
         (fivehundred = {
           name: "fivehundred",
           question:
-            "This automotive manufacturer uses the name of one of it's founders, who is considered to have made the first production automobile",
-          answers: ["Who is Henry Ford", "Who is Ferdinand Porsche", "Who is Karl Benz"],
-          correctAnswer: "Who is Karl Benz",
-          points: 500
+            "This company produced the zonda from 1999-2019",
+          answers: ["Who is pagani", "Who is ferrari", "Lancia"],
+          correctAnswer: "Who is pagani",
+          points: 1000
         })
       ]
     })
