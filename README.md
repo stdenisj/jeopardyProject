@@ -1,6 +1,6 @@
 Overview
-
-  I chose to create Automotive Jeopardy as my first project.My goal for this project was to prioritize JavaScript functions and use over HTML and CSS.
+I chose to create Automotive Jeopardy as my first project.
+My goal for this project was to prioritize JavaScript functions and use over HTML and CSS.
 
 How it works
 
