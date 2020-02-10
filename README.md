@@ -19,3 +19,6 @@ Languages - HTML5, CSS3, Javascript
 Design - Google Fonts, Bootstrap, Sweet Alerts
 Project Planning & Text Editor - Trello and Visual Studios Code
 
+WireFrame
+
+![Wireframe](images/project1_wireFrame.jpg)
