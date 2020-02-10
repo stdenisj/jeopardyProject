@@ -7,9 +7,7 @@ let gameLogic = [
       (onehundred = {
         name: "onehundred",
         question: "This engine layout has all cylinders arranged in a row",
-        answerOne: "What is an Inline-engine",
-        answerTwo: "What is a Radial engine",
-        answerThree: "What is a Sequential engine",
+        answers: [ "What is an Inline-engine", "What is a Radial engine", "What is a Sequential engine"],
         correctAnswer: "What is an Inline-engine",
         points: 100
       }),
@@ -17,9 +15,7 @@ let gameLogic = [
         name: "twohundred",
         question:
           "This Engine type is commonly used for its ability to a greater number of cylinders in a compact space",
-        answerOne: "What is a Flat-head engine",
-        answerTwo: "What is a V engine",
-        answerThree: "What is a Turbine engine",
+        answers: ["What is a Flat-head engine", "What is a V engine", "What is a Turbine engine"],
         correctAnswer: "What is a V engine",
         points: 200
       }),
@@ -27,9 +23,7 @@ let gameLogic = [
         name: "threehundred",
         question:
           "This engine configuration gets it's name from a popular fighting style",
-        answerOne: "What is a Judo-type engine",
-        answerTwo: "What is a Boxer-type engine",
-        answerThree: "What is a Drunken-type engine",
+        answers: ["What is a Judo-type engine", "What is a Boxer-type engine", "What is a Drunken-type engine"],
         correctAnswer: "What is a Boxer-type engine",
         points: 300
       }),
@@ -37,9 +31,7 @@ let gameLogic = [
         name: "fourhundred",
         question:
           "This engine configuration, found in Bugattis and Bentleys, comes from in theory combining two 'VR' engines in a V configuration ",
-        answerOne: "What is a W Engine",
-        answerTwo: "what is a Vee Engine",
-        answerThree: "What is a Rotary Engine",
+        answers: ["What is a W Engine", "what is a Vee Engine", "What is a Rotary Engine"],
         correctAnswer: "What is a W Engine",
         points: 400
       }),
@@ -47,9 +39,7 @@ let gameLogic = [
         name: "fivehundred",
         question:
           "This Engine configuration gets it's name from it's inventor, and instead of using pistons it spins a triangle-shaped rotor",
-        answerOne: "What is a Otto-cycle engine",
-        answerTwo: "What is a Atkinson-cycle engine",
-        answerThree: "What is a Wankel engine",
+        answers: ["What is a Otto-cycle engine", "What is a Atkinson-cycle engine", "What is a Wankel engine"],
         correctAnswer: "What is a Wankel engine",
         points: 500
       })
@@ -61,45 +51,35 @@ let gameLogic = [
       (onehundred = {
         name: "onehundred",
         question: "Camry, Tacoma, Supra",
-        answerOne: "Who is Toyota",
-        answerTwo: "Who is Tesla",
-        answerThree: "Who is Honda",
+        answers: [ "Who is Toyota", "Who is Tesla", "Who is Honda"],
         correctAnswer: "Who is Toyota",
         points: 100
       }),
       (twohundred = {
         name: "twohundred",
         question: "Tahoe, Malibu, Camaro",
-        answerOne: "Who is Ford",
-        answerTwo: "Who is Chrysler",
-        answerThree: "Who is Chevrolet",
+        answers: ["Who is Ford", "Who is Chrysler", "Who is Chevrolet"],
         correctAnswer: "Who is Chevrolet",
         points: 200
       }),
       (threehundred = {
         name: "threehundred",
         question: "Continental, Mulsanne, Flying Spur",
-        answerOne: "Who is Cadillac",
-        answerTwo: "Who is Mercedes-Benz",
-        answerThree: "Who is Bentley",
+        answers: ["Who is Cadillac", "Who is Mercedes-Benz", "Who is Bentley"],
         correctAnswer: "Who is Bentley",
         points: 300
       }),
       (fourhundred = {
         name: "fourhundred",
         question: "Evoque, Velar, Discovery",
-        answerOne: "Who is Land Rover",
-        answerTwo: "Who is Chrysler",
-        answerThree: "Who is Fiat",
+        answers: ["Who is Land Rover", "Who is Chrysler", "Who is Fiat"],
         correctAnswer: "Who is Land Rover",
         points: 400
       }),
       (fivehundred = {
         name: "fivehundred",
         question: "Agera, Regara, one:1",
-        answerOne: "Who is Lotus",
-        answerTwo: "Who is Koenigsegg",
-        answerThree: "Who is Pagani",
+        answers: ["Who is Lotus", "Who is Koenigsegg", "Who is Pagani"],
         correctAnswer: "Who is Koenigsegg",
         points: 500
       })
@@ -112,9 +92,7 @@ let gameLogic = [
         name: "onehundred",
         question:
           "Based on the Lotus Elise, this fully electric car was Tesla's first production vehicle",
-        answerOne: "What is the Model S",
-        answerTwo: "What is the Tesla Roadster",
-        answerThree: "What is the G-Wiz",
+        answers: ["What is the Model S", "What is the Tesla Roadster", "What is the G-Wiz"],
         correctAnswer: "What is the Tesla Roadster",
         points: 100
       }),
@@ -122,9 +100,7 @@ let gameLogic = [
         name: "twohundred",
         question:
           "An all-new version of this classic car was introduced in 1998",
-        answerOne: "What is the Volkswagen Beetle",
-        answerTwo: "What is the Fiat 500",
-        answerThree: "What is the Mini cooper",
+        answers: ["What is the Volkswagen Beetle", "What is the Fiat 500", "What is the Mini cooper"],
         correctAnswer: "What is the Volkswagen Beetle",
         points: 200
       }),
@@ -132,9 +108,7 @@ let gameLogic = [
         name: "threehundred",
         question:
           'This automotive legend is generally considered to be the first "pony car"',
-        answerOne: "What is the Chevrolet Camaro",
-        answerTwo: "What is the Ford Mustang",
-        answerThree: "What is the Dodge Challenger",
+        answers: ["What is the Chevrolet Camaro", "What is the Ford Mustang", "What is the Dodge Challenger"],
         correctAnswer: "What is the Ford Mustang",
         points: 300
       }),
@@ -142,9 +116,7 @@ let gameLogic = [
         name: "fourhundred",
         question:
           "It might not surprise you that according to the NICB, this vehicle was ranked as the second most stolen vehicle of 2019",
-        answerOne: "What is the Toyota Camry",
-        answerTwo: "What is the Nissan Maxima",
-        answerThree: "What is the Honda Accord",
+        answers: ["What is the Toyota Camry", "What is the Nissan Maxima", "What is the Honda Accord"],
         correctAnswer: "What is the Honda Accord",
         points: 400
       }),
@@ -152,9 +124,7 @@ let gameLogic = [
         name: "fivehundred",
         question:
           "This vehicle, sold from 1962-1964 and originally sold for $18,000, was sold at auction in 2018 for $48.4 million",
-        answerOne: "What is a Ferrari 250 GTO",
-        answerTwo: "What is a Shelby Daytona",
-        answerThree: "What is a Aston Martin DP215",
+        answers: ["What is a Ferrari 250 GTO", "What is a Shelby Daytona", "What is a Aston Martin DP215"],
         correctAnswer: "What is a Ferrari 250 GTO",
         points: 500
       })
@@ -166,9 +136,7 @@ let gameLogic = [
       (onehundred = {
         name: "onehundred",
         question: "This Formula One driver won his 6th championship in 2019",
-        answerOne: "Who is Lewis Hamilton",
-        answerTwo: "Who is Sebastion Vettel",
-        answerThree: "Who is Valtteri Bottas",
+        answers: ["Who is Lewis Hamilton", "Who is Sebastion Vettel", "Who is Valtteri Bottas"],
         correctAnswer: "Who is Lewis Hamilton",
         points: 100
       }),
@@ -176,18 +144,14 @@ let gameLogic = [
         name: "twohundred",
         question:
           "This French WRC driver won every championship from 2004-2012",
-        answerOne: "Who is Didier Auriol",
-        answerTwo: "Who is Sébastien Ogier",
-        answerThree: "Who is Sébastien Loeb",
+        answers: ["Who is Didier Auriol", "Who is Sébastien Ogier", "Who is Sébastien Loeb"],
         correctAnswer: "Who is Sébastien Loeb",
         points: 200
       }),
       (threehundred = {
         name: "threehundred",
         question: "This Nascar Legend was nicknamed 'The Intimidator'",
-        answerOne: "Who is Dale Earnhardt",
-        answerTwo: "Who is Dale Earnhardt Jr",
-        answerThree: "Who is Jimmie Johnson",
+        answers: ["Who is Dale Earnhardt", "Who is Dale Earnhardt Jr", "Who is Jimmie Johnson"],
         correctAnswer: "Who is Dale Earnhardt",
         points: 300
       }),
@@ -195,9 +159,7 @@ let gameLogic = [
         name: "fourhundred",
         question:
           "After his death, this Formula One driver's South American country declared a three day mourning period",
-        answerOne: "Who is Juan Manuel Fangio",
-        answerTwo: "Who is Ayrton Senna",
-        answerThree: "José Carlos Pace",
+        answers: ["Who is Juan Manuel Fangio", "Who is Ayrton Senna", "José Carlos Pace"],
         correctAnswer: "Who is Ayrton Senna",
         points: 400
       }),
@@ -205,9 +167,7 @@ let gameLogic = [
         name: "fivehundred",
         question:
           "In 1965, this driver won a Formula One championship, the Indy 500, the Tasman Series Cup, and the French Formula Two Championship",
-        answerOne: "Who is Jim Clark",
-        answerTwo: "Who is Jackie Stewart",
-        answerThree: "Who is Graham Hill",
+        answers: ["Who is Jim Clark", "Who is Jackie Stewart", "Who is Graham Hill"],
         correctAnswer: "Who is Jim Clark",
         points: 500
       })
@@ -220,9 +180,7 @@ let gameLogic = [
         name: "onehundred",
         question:
           "This vehicle is considered the first affordable automoblie and brought the assembly line to the automotive industry",
-        answerOne: "What is the Ford Model N",
-        answerTwo: "What is the Ford Model A",
-        answerThree: "What is the Ford Model T",
+        answers: ["What is the Ford Model N", "What is the Ford Model A", "What is the Ford Model T"],
         correctAnswer: "What is the Ford Model T",
         points: 100
       }),
@@ -230,9 +188,7 @@ let gameLogic = [
         name: "twohundred",
         question:
           "Ferdinand Porsche is credited for designing this German 'people's car'",
-        answerOne: "What is the Fiat 500",
-        answerTwo: "What is the Volkswagen Beetle",
-        answerThree: "What is the Porsche 356",
+        answers: ["What is the Fiat 500", "What is the Volkswagen Beetle", "What is the Porsche 356"],
         correctAnswer: "What is the Volkswagen Beetle",
         points: 200
       }),
@@ -240,9 +196,7 @@ let gameLogic = [
         name: "threehundred",
         question:
           "This vehicle has been the top selling vehicle in America for 42 years",
-        answerOne: "What is the Ford F-Series",
-        answerTwo: "What is the Dodge Ram",
-        answerThree: "What is the Chevrolet Silverado",
+        answers: ["What is the Ford F-Series", "What is the Dodge Ram", "What is the Chevrolet Silverado"],
         correctAnswer: "What is the Ford F-Series",
         points: 300
       }),
@@ -250,9 +204,7 @@ let gameLogic = [
         name: "fourhundred",
         question:
           "This two-seat sports car was the first dual rotor rotary-engined car",
-        answerOne: "What is the Mazda Cosmo",
-        answerTwo: "What is the Mazda RX-7",
-        answerThree: "What is the Mazda Rotary Pickup",
+        answers: ["What is the Mazda Cosmo", "What is the Mazda RX-7", "What is the Mazda Rotary Pickup"],
         correctAnswer: "What is the Mazda Cosmo",
         points: 400
       }),
@@ -260,9 +212,7 @@ let gameLogic = [
         name: "fivehundred",
         question:
           "This automotive manufacturer uses the name of one of it's founders, who is considered to have made the first production automobile",
-        answerOne: "Who is Henry Ford",
-        answerTwo: "Who is Ferdinand Porsche",
-        answerThree: "Who is Karl Benz",
+        answers: ["Who is Henry Ford", "Who is Ferdinand Porsche", "Who is Karl Benz"],
         correctAnswer: "Who is Karl Benz",
         points: 500
       })
@@ -406,13 +356,13 @@ function checkValue(pointValue, i) {
       ].question.toUpperCase();
       document.querySelectorAll("label")[0].textContent = gameLogic[i].value[
         j
-      ].answerOne.toUpperCase();
+      ].answers[0].toUpperCase();
       document.querySelectorAll("label")[1].textContent = gameLogic[i].value[
         j
-      ].answerTwo.toUpperCase();
+      ].answers[1].toUpperCase();
       document.querySelectorAll("label")[2].textContent = gameLogic[i].value[
         j
-      ].answerThree.toUpperCase();
+      ].answers[2].toUpperCase();
     }
 }
 
