@@ -220,6 +220,226 @@ let gameLogic = [
   })
 ];
 
+let gameLogicTwo = [
+    (category1 = {
+      name: "Group B",
+      value: [
+        (onehundred = {
+          name: "onehundred",
+          question: "By the time this German supercar ready for production and homologation, Group B was cancelled",
+          answers: [ "What the Porsche 959", "What is the BMW M1", "What is the Audi RS4"],
+          correctAnswer: "What the Porsche 959",
+          points: 600
+        }),
+        (twohundred = {
+          name: "twohundred",
+          question:
+            "This legendary rally car was the last rear-wheel drive vehicle to win the Group B championship",
+          answers: ["What is the Audi Quattro", "What is the Lancia 037", "Ford rs200"],
+          correctAnswer: "What is the Lancia 037",
+          points: 700
+        }),
+        (threehundred = {
+          name: "threehundred",
+          question:
+            "This homologation held the record of fastest accelerating vehicle for 12 years",
+          answers: ["What is the Lancia Delta Integrala", "What is the Ford rs200", "What is the Lancia 037"],
+          correctAnswer: "What is the Ford rs200",
+          points: 800
+        }),
+        (fourhundred = {
+          name: "fourhundred",
+          question:
+            "This vehicle brought 4-wheel drive to the fore-front of Group B",
+          answers: ["What is the porsche 911", "what is a lancia delta Integrala", "What is the Audi quattro"],
+          correctAnswer: "What is the Audi quattro",
+          points: 900
+        }),
+        (fivehundred = {
+          name: "fivehundred",
+          question:
+            "The British decided to put a Williams f1 designed engine in the middle of a small hatchback",
+          answers: ["What is the MG Metro 6R4", "What is the Mini cooper vr2", "What is the Austin Metro 6R6"],
+          correctAnswer: "What is the MG Metro 6R4",
+          points: 1000
+        })
+      ]
+    }),
+    (category2 = {
+      name: "Porsche",
+      value: [
+        (onehundred = {
+          name: "onehundred",
+          question: "Risky Business",
+          answers: [ "What is the Porsche 959", "What is the Porsche 911", "What is the Porsche 928"],
+          correctAnswer: "What is the 928",
+          points: 600
+        }),
+        (twohundred = {
+          name: "twohundred",
+          question: "Top Gun",
+          answers: ["What is the Porsche 911", "What is the Porsche 356", "What is the Porsche 944"],
+          correctAnswer: "What is the Porsche 356",
+          points: 700
+        }),
+        (threehundred = {
+          name: "threehundred",
+          question: "Bad Boys",
+          answers: ["What is the Porsche 911", "What is the Porsche 914", "What is the Porsche 928"],
+          correctAnswer: "What is the Porsche 911",
+          points: 800
+        }),
+        (fourhundred = {
+          name: "fourhundred",
+          question: "nine months",
+          answers: ["What is the Porsche 911", "What is the Porsche 911 carrera cabrio", "What is the Porsche 911 carrera"],
+          correctAnswer: "What is the Porsche 911 carrera cabrio",
+          points: 900
+        }),
+        (fivehundred = {
+          name: "fivehundred",
+          question: "Fracture",
+          answers: ["What is the Porsche 911", "What is the Porsche Boxster", "What is the Porsche Carrera Gt"],
+          correctAnswer: "What is the Porsche Carrera Gt",
+          points: 1000
+        })
+      ]
+    }),
+    (category3 = {
+      name: "Asian",
+      value: [
+        (onehundred = {
+          name: "onehundred",
+          question:
+            "you meet the nicest people on a blank",
+          answers: ["What is a honda", "What is a toyota", "What is a nissan"],
+          correctAnswer: "What is a honda",
+          points: 600
+        }),
+        (twohundred = {
+          name: "twohundred",
+          question:
+            "This automotive company offered a small hatch back with a fold-up motorscooter inside",
+          answers: ["What is honda", "What is toyota", "What is lexus"],
+          correctAnswer: "What is honda",
+          points: 700
+        }),
+        (threehundred = {
+          name: "threehundred",
+          question:
+            'This manufacturer launched a supercar with a v10 engine',
+          answers: ["What is honda", "What is lexus", "What is infiniti"],
+          correctAnswer: "What is lexus",
+          points: 800
+        }),
+        (fourhundred = {
+          name: "fourhundred",
+          question:
+            "This auto is known for its semetrical all-wheel drive system",
+          answers: ["What is Toyota", "What is subaru", "What is nissan"],
+          correctAnswer: "What is subaru",
+          points: 900
+        }),
+        (fivehundred = {
+          name: "fivehundred",
+          question:
+            "This manufacturer is known for making 'Godzilla'",
+          answers: ["What is nissan", "What is honda", "What is toyota"],
+          correctAnswer: "What is nissan",
+          points: 1000
+        })
+      ]
+    }),
+    (category4 = {
+      name: "American",
+      value: [
+        (onehundred = {
+          name: "onehundred",
+          question: "This Formula One driver won his 6th championship in 2019",
+          answers: ["Who is Lewis Hamilton", "Who is Sebastion Vettel", "Who is Valtteri Bottas"],
+          correctAnswer: "Who is Lewis Hamilton",
+          points: 100
+        }),
+        (twohundred = {
+          name: "twohundred",
+          question:
+            "This French WRC driver won every championship from 2004-2012",
+          answers: ["Who is Didier Auriol", "Who is Sébastien Ogier", "Who is Sébastien Loeb"],
+          correctAnswer: "Who is Sébastien Loeb",
+          points: 200
+        }),
+        (threehundred = {
+          name: "threehundred",
+          question: "This Nascar Legend was nicknamed 'The Intimidator'",
+          answers: ["Who is Dale Earnhardt", "Who is Dale Earnhardt Jr", "Who is Jimmie Johnson"],
+          correctAnswer: "Who is Dale Earnhardt",
+          points: 300
+        }),
+        (fourhundred = {
+          name: "fourhundred",
+          question:
+            "After his death, this Formula One driver's South American country declared a three day mourning period",
+          answers: ["Who is Juan Manuel Fangio", "Who is Ayrton Senna", "José Carlos Pace"],
+          correctAnswer: "Who is Ayrton Senna",
+          points: 400
+        }),
+        (fivehundred = {
+          name: "fivehundred",
+          question:
+            "In 1965, this driver won a Formula One championship, the Indy 500, the Tasman Series Cup, and the French Formula Two Championship",
+          answers: ["Who is Jim Clark", "Who is Jackie Stewart", "Who is Graham Hill"],
+          correctAnswer: "Who is Jim Clark",
+          points: 500
+        })
+      ]
+    }),
+    (category5 = {
+      name: "Italian",
+      value: [
+        (onehundred = {
+          name: "onehundred",
+          question:
+            "This vehicle is considered the first affordable automoblie and brought the assembly line to the automotive industry",
+          answers: ["What is the Ford Model N", "What is the Ford Model A", "What is the Ford Model T"],
+          correctAnswer: "What is the Ford Model T",
+          points: 100
+        }),
+        (twohundred = {
+          name: "twohundred",
+          question:
+            "Ferdinand Porsche is credited for designing this German 'people's car'",
+          answers: ["What is the Fiat 500", "What is the Volkswagen Beetle", "What is the Porsche 356"],
+          correctAnswer: "What is the Volkswagen Beetle",
+          points: 200
+        }),
+        (threehundred = {
+          name: "threehundred",
+          question:
+            "This vehicle has been the top selling vehicle in America for 42 years",
+          answers: ["What is the Ford F-Series", "What is the Dodge Ram", "What is the Chevrolet Silverado"],
+          correctAnswer: "What is the Ford F-Series",
+          points: 300
+        }),
+        (fourhundred = {
+          name: "fourhundred",
+          question:
+            "This two-seat sports car was the first dual rotor rotary-engined car",
+          answers: ["What is the Mazda Cosmo", "What is the Mazda RX-7", "What is the Mazda Rotary Pickup"],
+          correctAnswer: "What is the Mazda Cosmo",
+          points: 400
+        }),
+        (fivehundred = {
+          name: "fivehundred",
+          question:
+            "This automotive manufacturer uses the name of one of it's founders, who is considered to have made the first production automobile",
+          answers: ["Who is Henry Ford", "Who is Ferdinand Porsche", "Who is Karl Benz"],
+          correctAnswer: "Who is Karl Benz",
+          points: 500
+        })
+      ]
+    })
+  ];
+  
 //  These are global veriables that are used through this code.
 //  These are the start and reset buttons.
 
@@ -417,3 +637,45 @@ function compareAnswer(userAnswer) {
 function handleClickEvent() {
   event.preventDefault();
 }
+
+// function removeFirstRound(tile, board) {
+//     for( let i = 0; i < 30; i++) {
+//         board.lastChild.remove();
+//     }
+//         let t = 1;
+//         while (t <= 30) {
+//           tile = document.createElement("div");
+//           board.appendChild(tile);
+//           if (t <= 5) {
+//             let l = gameLogic[t - 1].name;
+//             board.lastChild.classList.add(l);
+//             board.lastChild.textContent = gameLogic[t - 1].name;
+//           } else if (t <= 10) {
+//             let z = t - 6;
+//             let y = gameLogic[z].name;
+//             board.lastChild.classList.add("onehundred", y);
+//             board.lastChild.textContent = "$900";
+//           } else if (t <= 15) {
+//             let z = t - 11;
+//             let y = gameLogic[z].name;
+//             board.lastChild.classList.add("twohundred", y);
+//             board.lastChild.textContent = "$800";
+//           } else if (t <= 20) {
+//             let z = t - 16;
+//             let y = gameLogic[z].name;
+//             board.lastChild.classList.add("threehundred", y);
+//             board.lastChild.textContent = "$700";
+//           } else if (t <= 25) {
+//             let z = t - 21;
+//             let y = gameLogic[z].name;
+//             board.lastChild.classList.add("fourhundred", y);
+//             board.lastChild.textContent = "$900";
+//           } else if (t <= 30) {
+//             let z = t - 26;
+//             let y = gameLogic[z].name;
+//             board.lastChild.classList.add("fivehundred", y);
+//             board.lastChild.textContent = "$1000";
+//           }
+//           t++;
+//         }
+//       }
