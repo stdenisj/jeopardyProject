@@ -26,3 +26,7 @@ WireFrame
 Trello
 
 <img src="images/Jeopardy_TrelloBoard.png" width="800px">
+
+Website
+
+<img src="images/website_layout.png" width="800px">
