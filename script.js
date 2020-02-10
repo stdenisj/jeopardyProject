@@ -295,6 +295,7 @@ let gameLogic = [
   
   // This stores the Jeopardy thinking music as a variable to be played later.
   let audio = new Audio("sounds/music.mp3");
+  audio.loop = true;
   
   // This adds an event listener to the start button. When clicked it runs the 'preventDefault' function. Then it checks to see if the element stored in the board variable has any child customElements, if it does not it runs the 'createGameboard' and 'activateDivs' functions. If there are child elements then the start button will no run any functions.
   startButton.addEventListener("click", () => {
