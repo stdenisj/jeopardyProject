@@ -21,8 +21,8 @@ Project Planning & Text Editor - Trello and Visual Studios Code
 
 WireFrame
 
-<img src="images/project1_wireFrame.JPG" width="500px">
+<img src="images/project1_wireFrame.JPG" width="700px">
 
 Trello
 
-<img src="images/Jeopardy_TrelloBoard.png" width="500px">
+<img src="images/Jeopardy_TrelloBoard.png" width="800px">
