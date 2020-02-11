@@ -16,7 +16,7 @@ Live site: https://master.d1a3wku9xuehdn.amplifyapp.com/
 
 Technologies Used
 Languages - HTML5, CSS3, Javascript
-Design - Google Fonts, Bootstrap, Sweet Alerts
+Design - Google and Adobe Fonts, Bootstrap, Sweet Alerts
 Project Planning & Text Editor - Trello and Visual Studios Code
 
 WireFrame
