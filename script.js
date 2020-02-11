@@ -604,16 +604,17 @@ function compareAnswer(userAnswer) {
           ) {
             score += gameLogic[c].value[q].points;
             remainingPoints -= gameLogic[c].value[q].points;
-            if (score > 2000 && remainingPoints === 0) {
-              swal("Congratulations", "You Win!!", "success");
+            if ((score >= 2000) && (remainingPoints == 0)) {
+              alert("You Win!!");
+              document.querySelector("#Gameboard").style.visibility = "hidden";
             }
             swal("Correct!", "", "success");
             document.querySelector(".displaypoints").textContent = "$" + score;
           } else {
             score -= gameLogic[c].value[q].points;
             remainingPoints -= gameLogic[c].value[q].points;
-            if (score < 2000 && remainingPoints === 0) {
-              swal("Game Over", "Please Play Again", "error");
+            if ((score < 2000) && (remainingPoints) == 0) {
+              alert("Game Over");
               document.querySelector("#Gameboard").style.visibility = "hidden";
             }
             swal(
