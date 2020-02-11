@@ -1,7 +1,7 @@
 //  This is gameLogic, it contains the categories, point values, questions and answers to be used later. It is an array of objects called 'category + the column number'. Inside each category is the name of the category and an array containing objects with the value name of each row. Each object contains the name of the value, the question, 3 multiple choic answers, the correct answer, and the number of points associated with question.
 
 let gameLogic = [
-  (category1 = {
+  (categoryOne = {
     name: "Engines",
     value: [
       (onehundred = {
@@ -45,7 +45,7 @@ let gameLogic = [
       })
     ]
   }),
-  (category2 = {
+  (categoryTwo = {
     name: "Makes",
     value: [
       (onehundred = {
@@ -85,7 +85,7 @@ let gameLogic = [
       })
     ]
   }),
-  (category3 = {
+  (categoryThree = {
     name: "Models",
     value: [
       (onehundred = {
@@ -130,7 +130,7 @@ let gameLogic = [
       })
     ]
   }),
-  (category4 = {
+  (categoryFour = {
     name: "Racing",
     value: [
       (onehundred = {
@@ -173,7 +173,7 @@ let gameLogic = [
       })
     ]
   }),
-  (category5 = {
+  (categoryFive = {
     name: "History",
     value: [
       (onehundred = {
@@ -217,228 +217,225 @@ let gameLogic = [
         points: 500
       })
     ]
+  }),
+  (categorySix = {
+    name: "Group B",
+    value: [
+      (onehundred = {
+        name: "onehundred",
+        question: "By the time this German supercar ready for production and homologation, Group B was cancelled",
+        answers: [ "What the Porsche 959", "What is the BMW M1", "What is the Audi RS4"],
+        correctAnswer: "What the Porsche 959",
+        points: 100
+      }),
+      (twohundred = {
+        name: "twohundred",
+        question:
+          "This legendary rally car was the last rear-wheel drive vehicle to win the Group B championship",
+        answers: ["What is the Audi Quattro", "What is the Lancia 037", "Ford rs200"],
+        correctAnswer: "What is the Lancia 037",
+        points: 200
+      }),
+      (threehundred = {
+        name: "threehundred",
+        question:
+          "This homologation held the record of fastest accelerating vehicle for 12 years",
+        answers: ["What is the Lancia Delta Integrala", "What is the Ford rs200", "What is the Lancia 037"],
+        correctAnswer: "What is the Ford rs200",
+        points: 300
+      }),
+      (fourhundred = {
+        name: "fourhundred",
+        question:
+          "This vehicle brought 4-wheel drive to the fore-front of Group B",
+        answers: ["What is the porsche 911", "what is a lancia delta Integrala", "What is the Audi quattro"],
+        correctAnswer: "What is the Audi quattro",
+        points: 400
+      }),
+      (fivehundred = {
+        name: "fivehundred",
+        question:
+          "The British decided to put a Williams f1 designed engine in the middle of a small hatchback",
+        answers: ["What is the MG Metro 6R4", "What is the Mini cooper vr2", "What is the Austin Metro 6R6"],
+        correctAnswer: "What is the MG Metro 6R4",
+        points: 500
+      })
+    ]
+  }),
+  (categorySeven = {
+    name: "Porsche",
+    value: [
+      (onehundred = {
+        name: "onehundred",
+        question: "Risky Business",
+        answers: [ "What is the Porsche 959", "What is the Porsche 911", "What is the Porsche 928"],
+        correctAnswer: "What is the 928",
+        points: 100
+      }),
+      (twohundred = {
+        name: "twohundred",
+        question: "Top Gun",
+        answers: ["What is the Porsche 911", "What is the Porsche 356", "What is the Porsche 944"],
+        correctAnswer: "What is the Porsche 356",
+        points: 200
+      }),
+      (threehundred = {
+        name: "threehundred",
+        question: "Bad Boys",
+        answers: ["What is the Porsche 911", "What is the Porsche 914", "What is the Porsche 928"],
+        correctAnswer: "What is the Porsche 911",
+        points: 300
+      }),
+      (fourhundred = {
+        name: "fourhundred",
+        question: "nine months",
+        answers: ["What is the Porsche 911", "What is the Porsche 911 carrera cabrio", "What is the Porsche 911 carrera"],
+        correctAnswer: "What is the Porsche 911 carrera cabrio",
+        points: 400
+      }),
+      (fivehundred = {
+        name: "fivehundred",
+        question: "Fracture",
+        answers: ["What is the Porsche 911", "What is the Porsche Boxster", "What is the Porsche Carrera Gt"],
+        correctAnswer: "What is the Porsche Carrera Gt",
+        points: 500
+      })
+    ]
+  }),
+  (categoryEight = {
+    name: "Asian",
+    value: [
+      (onehundred = {
+        name: "onehundred",
+        question:
+          "you meet the nicest people on a blank",
+        answers: ["What is a honda", "What is a toyota", "What is a nissan"],
+        correctAnswer: "What is a honda",
+        points: 100
+      }),
+      (twohundred = {
+        name: "twohundred",
+        question:
+          "This automotive company offered a small hatch back with a fold-up motorscooter inside",
+        answers: ["What is honda", "What is toyota", "What is lexus"],
+        correctAnswer: "What is honda",
+        points: 200
+      }),
+      (threehundred = {
+        name: "threehundred",
+        question:
+          'This manufacturer launched a supercar with a v10 engine',
+        answers: ["What is honda", "What is lexus", "What is infiniti"],
+        correctAnswer: "What is lexus",
+        points: 300
+      }),
+      (fourhundred = {
+        name: "fourhundred",
+        question:
+          "This auto is known for its semetrical all-wheel drive system",
+        answers: ["What is Toyota", "What is subaru", "What is nissan"],
+        correctAnswer: "What is subaru",
+        points: 400
+      }),
+      (fivehundred = {
+        name: "fivehundred",
+        question:
+          "This manufacturer is known for making 'Godzilla'",
+        answers: ["What is nissan", "What is honda", "What is toyota"],
+        correctAnswer: "What is nissan",
+        points: 500
+      })
+    ]
+  }),
+  (categoryNine = {
+    name: "American",
+    value: [
+      (onehundred = {
+        name: "onehundred",
+        question: "Built ___ tough",
+        answers: ["Who is ford", "Who is chevrolet", "Who is dodge"],
+        correctAnswer: "Who is ford",
+        points: 100
+      }),
+      (twohundred = {
+        name: "twohundred",
+        question:
+          "This company makes the hellephant Crate engine",
+        answers: ["Who is dodge", "Who is shelby", "Who is tesla"],
+        correctAnswer: "Who is dodge",
+        points: 200
+      }),
+      (threehundred = {
+        name: "threehundred",
+        question: "This vehicle was sold in australia as the holden Commodore'",
+        answers: ["Who is the pontiac g8", "Who is the chevrolet corvette", "Who is the ford mustang"],
+        correctAnswer: "Who is the pontiac g8",
+        points: 300
+      }),
+      (fourhundred = {
+        name: "fourhundred",
+        question:
+          "this company battled ferrari at le mans, winning in 1967, 1968, and 1969",
+        answers: ["Who is cadillac", "Who is ford", "who is buick"],
+        correctAnswer: "Who is ford",
+        points: 400
+      }),
+      (fivehundred = {
+        name: "fivehundred",
+        question:
+          "After over fifty years of rumors, this company will finally release a mid-engine version of their iconic sports car",
+        answers: ["Who is ford", "Who is dodge", "Who is chevrolet"],
+        correctAnswer: "Who is chevrolet",
+        points: 500
+      })
+    ]
+  }),
+  (categoryTen = {
+    name: "Italian",
+    value: [
+      (onehundred = {
+        name: "onehundred",
+        question: "This manufacturer was started to spite Enzo Ferrari",
+        answers: ["Who is Lamborgini", "Who is pagani", "Who is Alfa Romeo"],
+        correctAnswer: "Who is Lamborgini",
+        points: 100
+      }),
+      (twohundred = {
+        name: "twohundred",
+        question:
+          "This company call maranello home",
+        answers: ["who is alfa romeo", "Who is ferrari", "Who is fiat"],
+        correctAnswer: "Who is ferrari",
+        points: 200
+      }),
+      (threehundred = {
+        name: "threehundred",
+        question:
+          "this manufacturer has a long history of rally success",
+        answers: ["Who is ferrari", "Who is lancia", "Who is lamborgini"],
+        correctAnswer: "Who is lancia",
+        points: 300
+      }),
+      (fourhundred = {
+        name: "fourhundred",
+        question:
+          "This Manufacturer uses are raging bull as their emblem",
+        answers: ["who is ferrari", "who is pagani", "who is lamborgini"],
+        correctAnswer:  "who is lamborgini",
+        points: 400
+      }),
+      (fivehundred = {
+        name: "fivehundred",
+        question:
+          "This company produced the zonda from 1999-2019",
+        answers: ["Who is pagani", "Who is ferrari", "Lancia"],
+        correctAnswer: "Who is pagani",
+        points: 500
+      })
+    ]
   })
 ];
 
-let gameLogicTwo = [
-    (category1 = {
-      name: "Group B",
-      value: [
-        (onehundred = {
-          name: "onehundred",
-          question: "By the time this German supercar ready for production and homologation, Group B was cancelled",
-          answers: [ "What the Porsche 959", "What is the BMW M1", "What is the Audi RS4"],
-          correctAnswer: "What the Porsche 959",
-          points: 600
-        }),
-        (twohundred = {
-          name: "twohundred",
-          question:
-            "This legendary rally car was the last rear-wheel drive vehicle to win the Group B championship",
-          answers: ["What is the Audi Quattro", "What is the Lancia 037", "Ford rs200"],
-          correctAnswer: "What is the Lancia 037",
-          points: 700
-        }),
-        (threehundred = {
-          name: "threehundred",
-          question:
-            "This homologation held the record of fastest accelerating vehicle for 12 years",
-          answers: ["What is the Lancia Delta Integrala", "What is the Ford rs200", "What is the Lancia 037"],
-          correctAnswer: "What is the Ford rs200",
-          points: 800
-        }),
-        (fourhundred = {
-          name: "fourhundred",
-          question:
-            "This vehicle brought 4-wheel drive to the fore-front of Group B",
-          answers: ["What is the porsche 911", "what is a lancia delta Integrala", "What is the Audi quattro"],
-          correctAnswer: "What is the Audi quattro",
-          points: 900
-        }),
-        (fivehundred = {
-          name: "fivehundred",
-          question:
-            "The British decided to put a Williams f1 designed engine in the middle of a small hatchback",
-          answers: ["What is the MG Metro 6R4", "What is the Mini cooper vr2", "What is the Austin Metro 6R6"],
-          correctAnswer: "What is the MG Metro 6R4",
-          points: 1000
-        })
-      ]
-    }),
-    (category2 = {
-      name: "Porsche",
-      value: [
-        (onehundred = {
-          name: "onehundred",
-          question: "Risky Business",
-          answers: [ "What is the Porsche 959", "What is the Porsche 911", "What is the Porsche 928"],
-          correctAnswer: "What is the 928",
-          points: 600
-        }),
-        (twohundred = {
-          name: "twohundred",
-          question: "Top Gun",
-          answers: ["What is the Porsche 911", "What is the Porsche 356", "What is the Porsche 944"],
-          correctAnswer: "What is the Porsche 356",
-          points: 700
-        }),
-        (threehundred = {
-          name: "threehundred",
-          question: "Bad Boys",
-          answers: ["What is the Porsche 911", "What is the Porsche 914", "What is the Porsche 928"],
-          correctAnswer: "What is the Porsche 911",
-          points: 800
-        }),
-        (fourhundred = {
-          name: "fourhundred",
-          question: "nine months",
-          answers: ["What is the Porsche 911", "What is the Porsche 911 carrera cabrio", "What is the Porsche 911 carrera"],
-          correctAnswer: "What is the Porsche 911 carrera cabrio",
-          points: 900
-        }),
-        (fivehundred = {
-          name: "fivehundred",
-          question: "Fracture",
-          answers: ["What is the Porsche 911", "What is the Porsche Boxster", "What is the Porsche Carrera Gt"],
-          correctAnswer: "What is the Porsche Carrera Gt",
-          points: 1000
-        })
-      ]
-    }),
-    (category3 = {
-      name: "Asian",
-      value: [
-        (onehundred = {
-          name: "onehundred",
-          question:
-            "you meet the nicest people on a blank",
-          answers: ["What is a honda", "What is a toyota", "What is a nissan"],
-          correctAnswer: "What is a honda",
-          points: 600
-        }),
-        (twohundred = {
-          name: "twohundred",
-          question:
-            "This automotive company offered a small hatch back with a fold-up motorscooter inside",
-          answers: ["What is honda", "What is toyota", "What is lexus"],
-          correctAnswer: "What is honda",
-          points: 700
-        }),
-        (threehundred = {
-          name: "threehundred",
-          question:
-            'This manufacturer launched a supercar with a v10 engine',
-          answers: ["What is honda", "What is lexus", "What is infiniti"],
-          correctAnswer: "What is lexus",
-          points: 800
-        }),
-        (fourhundred = {
-          name: "fourhundred",
-          question:
-            "This auto is known for its semetrical all-wheel drive system",
-          answers: ["What is Toyota", "What is subaru", "What is nissan"],
-          correctAnswer: "What is subaru",
-          points: 900
-        }),
-        (fivehundred = {
-          name: "fivehundred",
-          question:
-            "This manufacturer is known for making 'Godzilla'",
-          answers: ["What is nissan", "What is honda", "What is toyota"],
-          correctAnswer: "What is nissan",
-          points: 1000
-        })
-      ]
-    }),
-    (category4 = {
-      name: "American",
-      value: [
-        (onehundred = {
-          name: "onehundred",
-          question: "Built ___ tough",
-          answers: ["Who is ford", "Who is chevrolet", "Who is dodge"],
-          correctAnswer: "Who is ford",
-          points: 600
-        }),
-        (twohundred = {
-          name: "twohundred",
-          question:
-            "This company makes the hellephant Crate engine",
-          answers: ["Who is dodge", "Who is shelby", "Who is tesla"],
-          correctAnswer: "Who is dodge",
-          points: 700
-        }),
-        (threehundred = {
-          name: "threehundred",
-          question: "This vehicle was sold in australia as the holden Commodore'",
-          answers: ["Who is the pontiac g8", "Who is the chevrolet corvette", "Who is the ford mustang"],
-          correctAnswer: "Who is the pontiac g8",
-          points: 800
-        }),
-        (fourhundred = {
-          name: "fourhundred",
-          question:
-            "this company battled ferrari at le mans, winning in 1967, 1968, and 1969",
-          answers: ["Who is cadillac", "Who is ford", "who is buick"],
-          correctAnswer: "Who is ford",
-          points: 900
-        }),
-        (fivehundred = {
-          name: "fivehundred",
-          question:
-            "After over fifty years of rumors, this company will finally release a mid-engine version of their iconic sports car",
-          answers: ["Who is ford", "Who is dodge", "Who is chevrolet"],
-          correctAnswer: "Who is chevrolet",
-          points: 1000
-        })
-      ]
-    }),
-    (category5 = {
-      name: "Italian",
-      value: [
-        (onehundred = {
-          name: "onehundred",
-          question: "This manufacturer was started to spite Enzo Ferrari",
-          answers: ["Who is Lamborgini", "Who is pagani", "Who is Alfa Romeo"],
-          correctAnswer: "Who is Lamborgini",
-          points: 600
-        }),
-        (twohundred = {
-          name: "twohundred",
-          question:
-            "This company call maranello home",
-          answers: ["who is alfa romeo", "Who is ferrari", "Who is fiat"],
-          correctAnswer: "Who is ferrari",
-          points: 700
-        }),
-        (threehundred = {
-          name: "threehundred",
-          question:
-            "this manufacturer has a long history of rally success",
-          answers: ["Who is ferrari", "Who is lancia", "Who is lamborgini"],
-          correctAnswer: "Who is lancia",
-          points: 800
-        }),
-        (fourhundred = {
-          name: "fourhundred",
-          question:
-            "This Manufacturer uses are raging bull as their emblem",
-          answers: ["who is ferrari", "who is pagani", "who is lamborgini"],
-          correctAnswer:  "who is lamborgini",
-          points: 900
-        }),
-        (fivehundred = {
-          name: "fivehundred",
-          question:
-            "This company produced the zonda from 1999-2019",
-          answers: ["Who is pagani", "Who is ferrari", "Lancia"],
-          correctAnswer: "Who is pagani",
-          points: 1000
-        })
-      ]
-    })
-  ];
-  
 //  These are global veriables that are used through this code.
 //  These are the start and reset buttons.
 
