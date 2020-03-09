@@ -469,7 +469,7 @@ startButton.addEventListener("click", () => {
   if (board.lastChild == null) {
     createGameBoard();
     activateDivs();
-  }
+  };
 });
 
 // This adds an event listener to the reset button. When clicked it will run the reload method on the document location causing the webpage to refresh.
@@ -482,13 +482,12 @@ resetButton.addEventListener("click", () => {
 function createGameBoard() {
   populateGameBoard(tile, board);
   divsArr = document.querySelectorAll(
-    "div.onehundred, div.twohundred, div.threehundred, div.fourhundred, div.fivehundred"
-  );
+    "div.onehundred, div.twohundred, div.threehundred, div.fourhundred, div.fivehundred");
   divsArr.forEach(div => {
     div.setAttribute("data-toggle", "modal");
     div.setAttribute("data-target", "#exampleModalCenter");
   });
-}
+};
 
 // This is the 'activateDivs' function.
 // This function goes through and adds an event listener to every gameBoard cell. When clicked it runs the 'handleClickEvent' function then it runs the 'loadQuestionAndAnswers function passing through the even data. Then it sets the event target to be hidden, allowing the function to still hold the space on the board but also not be clicked on again. Then it plays the audio variable.
@@ -501,7 +500,7 @@ function activateDivs() {
       audio.play();
     });
   });
-}
+};
 
 // This is the 'populateGameBoard' function.
 // This function creates a loop that runs 30 times. Each time the loop is run it creates a new div element and appends it to the board variable as a child element. Then it checks the loop number. Based on which number loop it assigns one or two class nammes and changes the text content of the element to reflect the row value or category name.
@@ -539,10 +538,10 @@ function populateGameBoard(tile, board) {
       let y = gameLogic[z].name;
       board.lastChild.classList.add("fivehundred", y);
       board.lastChild.textContent = "$500";
-    }
+    };
     t++;
-  }
-}
+  };
+};
 
 // This is the 'loadQuestionsAndAnswers' function.
 // This function pulls the class names from the 'click' event tied to the activateDivs function. It stores those classes in two variables and passese them into the 'CheckCat' function.
@@ -550,7 +549,7 @@ function loadQuestionAndAnswers(event) {
   pointValue = event.target.classList[0];
   cat = event.target.classList[1];
   checkCat(cat, pointValue);
-}
+};
 
 // This is the 'checkCat' function.
 // This function takes the column  and row classes stored in the 'loadQuestionAndAnswers' function. It loops through the 'gameLogic' array and compares the category variable to each object name. When it finds a matching name it runs the 'checkValue' function using the object that has the same category name.
@@ -560,27 +559,20 @@ function checkCat(cat, pointValue) {
       checkValue(pointValue, i);
     }
   }
-}
+};
 
 // This is the 'checkValue' function.
 // This function uses the row class variable stored in the 'loadQuestionsAndAnswers' and the object located in the 'checkCat' function. Then it loops through the object comparing the row values. When the matching value is found, the function changes the text content of the modal title and labels of each answer button to the information stored for that found column and row.
 function checkValue(pointValue, i) {
-  for (let j = 0; j < 5; j++)
+  for (let j = 0; j < 5; j++) {
     if (pointValue === gameLogic[i].value[j].name) {
-      document.querySelector(".modal-title").textContent = gameLogic[i].value[
-        j
-      ].question.toUpperCase();
-      document.querySelectorAll("label")[0].textContent = gameLogic[i].value[
-        j
-      ].answers[0].toUpperCase();
-      document.querySelectorAll("label")[1].textContent = gameLogic[i].value[
-        j
-      ].answers[1].toUpperCase();
-      document.querySelectorAll("label")[2].textContent = gameLogic[i].value[
-        j
-      ].answers[2].toUpperCase();
-    }
-}
+      document.querySelector(".modal-title").textContent = gameLogic[i].value[j].question.toUpperCase();
+      document.querySelectorAll("label")[0].textContent = gameLogic[i].value[j].answers[0].toUpperCase();
+      document.querySelectorAll("label")[1].textContent = gameLogic[i].value[j].answers[1].toUpperCase();
+      document.querySelectorAll("label")[2].textContent = gameLogic[i].value[j].answers[2].toUpperCase();
+    };
+  };
+};
 
 // This loops through the multiple choice answer buttons and assigns an event listener to each on. When 'clicked' it stores the 'textContent of the label element next to clicked button in a variable. Then it pauses the audio started in the 'activateDivs' function. The new variable is passed into the 'compareAnswer' function.
 answerButtons.forEach(button => {
@@ -607,7 +599,7 @@ function compareAnswer(userAnswer) {
             if ((score >= 2000) && (remainingPoints == 0)) {
               alert("You Win!!");
               document.querySelector("#Gameboard").style.visibility = "hidden";
-            }
+            };
             swal("Correct!", "", "success");
             document.querySelector(".displaypoints").textContent = "$" + score;
           } else {
@@ -616,64 +608,22 @@ function compareAnswer(userAnswer) {
             if ((score < 2000) && (remainingPoints) == 0) {
               alert("Game Over");
               document.querySelector("#Gameboard").style.visibility = "hidden";
-            }
+            };
             swal(
               "Incorrect",
               `I'm sorry, the correct answer is ${gameLogic[c].value[q].correctAnswer}`,
               "error"
             );
             document.querySelector(".displaypoints").textContent = "$" + score;
-          }
-        }
-      }
-    }
-  }
-}
+          };
+        };
+      };
+    };
+  };
+};
 
 // This is the 'handleClickEvent' function.
 // this function calls the prevent default function for the event.
 function handleClickEvent() {
   event.preventDefault();
-}
-
-// function removeFirstRound(tile, board) {
-//     for( let i = 0; i < 30; i++) {
-//         board.lastChild.remove();
-//     }
-//         let t = 1;
-//         while (t <= 30) {
-//           tile = document.createElement("div");
-//           board.appendChild(tile);
-//           if (t <= 5) {
-//             let l = gameLogic[t - 1].name;
-//             board.lastChild.classList.add(l);
-//             board.lastChild.textContent = gameLogic[t - 1].name;
-//           } else if (t <= 10) {
-//             let z = t - 6;
-//             let y = gameLogic[z].name;
-//             board.lastChild.classList.add("onehundred", y);
-//             board.lastChild.textContent = "$900";
-//           } else if (t <= 15) {
-//             let z = t - 11;
-//             let y = gameLogic[z].name;
-//             board.lastChild.classList.add("twohundred", y);
-//             board.lastChild.textContent = "$800";
-//           } else if (t <= 20) {
-//             let z = t - 16;
-//             let y = gameLogic[z].name;
-//             board.lastChild.classList.add("threehundred", y);
-//             board.lastChild.textContent = "$700";
-//           } else if (t <= 25) {
-//             let z = t - 21;
-//             let y = gameLogic[z].name;
-//             board.lastChild.classList.add("fourhundred", y);
-//             board.lastChild.textContent = "$900";
-//           } else if (t <= 30) {
-//             let z = t - 26;
-//             let y = gameLogic[z].name;
-//             board.lastChild.classList.add("fivehundred", y);
-//             board.lastChild.textContent = "$1000";
-//           }
-//           t++;
-//         }
-//       }
+};
