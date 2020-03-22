@@ -12,7 +12,7 @@ If the user guesses the correct answer the point value will be added to their sc
 If the user does not guess the correct answer, then those points will be deducted from their score.<br>
 The game ends when all questions are answered. They will win if their score is over 2000.<br>
 
-Live site: https://master.d1a3wku9xuehdn.amplifyapp.com/
+[Live site:](https://master.d1a3wku9xuehdn.amplifyapp.com/)
 
 Technologies Used
 Languages - HTML5, CSS3, Javascript
